@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+</head>
+<body>
+	<!--<article>-->
+	<!-- 法院公告 -->
+		<!--<div class="w-fx-infor-item">
+			<div class="w-fx-infor-container">
+				<div class="w-fx-infor-left">
+					<div class="w-fx-infor-text">
+						李莉、刘东强、成都爱之伽商贸有限公司：本院受理原告中国民生银行股份有限公司成都分行诉被告融借款合同纠纷案，现依法向你们公告送达起诉状副本、应诉通知书、举证通知书、告知合议庭组通知书、开庭传票、(2016)川0191民初8941号、8941号之一民事裁定书及保全财产清单。
+					</div>
+					<div class="w-fy-infor">
+						<span class="w-fy-infor-one">
+							<span>公告法院：</span>
+							<span>广州知识产权法院</span>
+						</span>
+						<span>
+							<span>公告类型：</span>
+							<span>起诉状副本</span>
+						</span>
+					</div>
+					<div class="w-release-time">
+						发布日期：<span>2016-8-12</span>
+					</div>
+				</div>
+				<div  class="w-fx-infor-right">
+					<div class="w-fx-infor-right1">
+						<span class="w-fx-infor-right-sxr">法院公告</span>	
+						<span class="w-fx-infor-right-ckxq" onclick="seeDetail (patent,i)">查看详情</span>
+					</div>					
+				</div>
+			</div>
+			<div class="w-fx-conpany-name">
+				<span>相关公司:</span>
+				<a href="#">南京五莲传感科技有限公司</a>-->
+				<!--<a href="#">南京五莲传感科技有限公司</a>
+				<a href="#">南京五莲传感科技有限公司</a>-->
+			<!--</div>
+		</div>		
+	</article>-->
+		<div class="see-details">
+				<div class="see-detail-moudel">
+					<div class="see-detail-title">
+						法院公告详情
+						<img src="img/close.png"/>
+					</div>
+					<div class="see-detail-time">
+						发布日期：<span>2017-01-01</span>
+					</div>
+					<div class="see-detail-type">
+						起诉类型
+					</div>
+					<div class="see-detail-people">
+						当事人：<span>我们一起</span>
+					</div>
+					<div class="see-detail-fyuan">
+						公告法院：<span>我们一起</span>
+					</div>
+					<div class="see-detail-content">
+						内容：<span>我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起我们一起</span>
+					</div>
+				</div>
+			</div>
+</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	   $(function  () {
+			var keySearch = sessionStorage.getItem('searchContent');
+	if (keySearch == '') {
+			var keyWord = $('.search-result-nav input').val('小米');
+			} else{
+			var keyWord = $('.search-result-nav input').val(keySearch);
+			}
+			$.post('https://120.27.236.240:8443/interface/judicial/notice/getListByID?enterpriseId=95756072').done(function  (patent) {
+				console.log(patent);
+				var searchNum = patent.body.length;
+				$('.search-number').html(searchNum);
+				$('.search-company').html($('.search-result-nav input').val());
+					if (patent.body.length == 0) {
+					var bidList = '<div class="no-message">暂无相关信息</div>';
+					 $('.search-list-bg').append(bidList);
+				} else{
+						for (var i =0;i<patent.body.length;i++) {
+						var patentList = '<article><div class="w-fx-infor-item"><div class="w-fx-infor-container"><div class="w-fx-infor-left"><div class="w-fx-infor-text">'+
+				     judgeIsContent(patent.body[i].content) + '</div><div class="w-fy-infor"><span class="w-fy-infor-one"><span>公告法院：</span><span>'+
+				      judgeIsContent(patent.body[i].publishCourt) +'</span></span><span><span>公告类型：</span><span>'+ judgeIsContent(patent.body[i].type)
+				      +'</span></span></div><div class="w-release-time">处罚日期：<span>'+ 
+				     judgeIsContent(patent.body[i].publishTime)  +'</span></div></div><div  class="w-fx-infor-right"><div class="w-fx-infor-right1"><span class="w-fx-infor-right-sxr">法院公告</span><span class="w-fx-infor-right-ckxq see-detail-button'+ i 
+				      +'">查看详情</span><input type="hidden" name="" id="" value="'+ i +'" /></div></div></div><div class="w-fx-conpany-name"><span>相关公司：</span><a href="#">'+
+				     judgeIsContent(patent.body[i].enterpriseName)  + '</a></div></div></article>';
+				  $('.search-list-bg').append(patentList);
+				}	
+				seeDetail (patent);
+				}
+			});
+			
+//			查看详情
+            	//	   	模态框
+            	function seeDetail (patent) {
+            		 $('.w-fx-infor-right-ckxq').click(function  () {
+            		 	    var i = $(this).siblings("input[type='hidden']").val();
+	   	 	                  $('.see-details').show();
+	   	 	                  var publishTime = judgeIsContent(patent.body[i].publishTime);
+							var publishType = judgeIsContent(patent.body[i].type);
+							var aboutCompany = judgeIsContent(patent.body[i].enterpriseName);
+							var publishCourt = judgeIsContent(patent.body[i].publishCourt);
+							var publishContent = judgeIsContent(patent.body[i].content);
+	   	 	                  $('.see-detail-time span').html(publishTime);
+	   	 	                  $('.see-detail-type').html(publishType);
+	   	 	                  $('.see-detail-people span').html(aboutCompany);
+	   	 	                  $('.see-detail-fyuan span').html(publishCourt);
+	   	 	                  $('.see-detail-content span').html(publishContent);
+	   	 	                  
+	   	        });
+	   	        $('.see-detail-title').click(function  () {
+	   	        	 $('.see-details').hide();
+	   	        });
+            	}
+            	
+            	function judgeIsContent (name) {
+					if (name == 'null') {
+					    return '- -';
+				} else{
+					 return  name;
+				}
+					}
+            	
+	   });
+		
+	</script>
+</html>

@@ -1,0 +1,197 @@
+@charset "utf-8";
+.w-nav-bg{
+	width:100%;
+	height:160px;
+	background-image: url(../../img/black-bj.png);
+}
+.w-nav-contant{
+	width: 1200px;
+	margin:0 auto;
+	padding-top:50px;
+}
+.w-nav-contant p:first-child{
+	color:white;
+	font-size:20px;
+}
+.w-nav-contant p:last-child{
+	color:#AAABAE;
+	font-size: 16px;
+}
+.w-container{
+	width: 1200px;
+	margin:0 auto;
+}
+.w-about-product-box{
+	width:100%;
+	-webkit-box-shadow: 0 0 1px #999;
+	-moz-box-shadow: 0 0 1px #999;
+	-ms-box-shadow: 0 0 1px #999;
+	-o-box-shadow: 0 0 1px #999;
+	box-shadow: 0 0 1px #999;
+	margin-bottom: 20px;
+}
+.w-product-left{
+	width:220px;
+	background: #23CD9A;
+	text-align: center;
+	padding:40px 0;
+	color:white;
+}
+.w-product-left div:first-child{
+	font-size: 18px;
+}
+.w-product-left div:last-child{
+	font-size: 20px;
+}
+.w-product-left img{
+	margin-top: 89px;
+}
+.w-product-right{
+	width:980px;
+	padding:40px 60px 0;
+	background: white;
+}
+.w-huanbao-title{
+	color:black;
+	font-weight:600;
+}
+.w-product-right p{
+	color:#999;
+	margin-top:30px
+}
+.w-conpany-name-box{
+	padding:30px 0;
+}
+.w-conpany-left{
+	width:350px;
+	padding: 55px 0 0 30px;
+}
+.w-conpany-tit{
+	height: 60px;
+	padding-left: 80px;
+	line-height: 60px;
+	font-size: 16px;
+	font-weight: 600;
+	background: url(../../img/skr-logo.png) no-repeat;
+	background-size: 60px;
+}
+.w-conpany-center{
+	width:450px;
+	border-left:2px dotted #ebebeb;
+	border-right:2px dotted #ebebeb;
+	color:#333;
+	padding:10px 30px 0;
+}
+.w-conpany-center li{
+	margin-bottom: 20px;
+}
+.w-conpany-right{
+	width:400px;
+	padding:30px 30px 0 100px;
+}
+.w-app-code{
+	height: 104px;
+	background: url(../../img/qrcode-app.jpg) no-repeat right;
+	background-size: 104px;
+}
+.w-text-big{
+	font-size:32px;
+	margin-bottom: 14px;	
+}
+.w-map{
+	width: 100%;
+	padding:20px;
+}
+.w-map-prcture{
+	width:100%;
+	height:260px;
+	background: url(../../img/w-img/map.png)no-repeat;
+	background-size: 100%;
+}
+/*认领企业*/
+.w-containerClaim{
+	width: 100%;
+	background: white;
+}
+.w-claim-header{
+	width: 100%;
+	height:70px;
+	text-align: center;
+	line-height:70px;
+	color:#f34520;
+	margin-top:-30px;
+	font-size:14px ;
+	border-bottom:1px solid #EBEBEB;
+}
+.w-claim-content{
+	width: 100%;
+	font-size: 14px;
+}
+.w-claim-inputFile{
+	width: 160px;
+	height: 160px;
+	margin:30px auto;
+	background: url(../../img/w-img/add-yingye.png) no-repeat;
+	background-size: 160px 160px;
+	display: block;
+	padding-top: 100px;
+}
+.w-claim-inputFile p{
+	color:#999;
+	text-align: center;
+	margin-top:20px;
+	font-size:14px ;
+}
+.w-form-list{
+	width: 600px;
+	margin:20px auto;
+	text-align: right;
+}
+.w-form-list label{
+	margin-right: 20px;
+	font-size: 14px;
+	color:#333;
+	font-weight: 400;
+}
+.w-form-list input{
+	width: 500px;
+	height: 40px;
+	border: 1px solid #EBEBEB;
+	padding-left:10px ;
+}
+.w-form-submit{
+	display: block;
+	margin:30px auto;
+	width: 300px;
+	height:50px;
+	color:white;
+	background:#29C9A0;
+	border-radius: 30px;
+}
+.w-claim-footer{
+	margin-top:90px;
+	border-top:1px solid #EBEBEB;
+	width: 100%;
+}
+.w-claim-footer h3{
+	font-size:16px;
+	color:#666;
+	font-weight: 600;
+	margin:-8px auto 0;
+	width: 150px;
+	text-align: center;
+	background: white;
+}
+.w-prcture-area{
+	width: 100%;
+	margin:40px 0  100px;
+}
+.w-prcture-area li{
+	display: inline-block;	
+	width: 196px;
+	text-align: center;
+}
+.w-prcture-area li p{
+	font-size: 14px;
+	color:#999;
+}

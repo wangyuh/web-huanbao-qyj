@@ -1,0 +1,152 @@
+@charset "utf-8";
+article{
+	width: 850px;
+	margin:0 auto;
+	border: 1px solid black;
+}
+/*基本信息》公司简介*/
+.gray{
+	color:gray;
+}
+.w-text-center{
+	text-align: center;
+}
+.w-table-body p{
+	text-indent: 2em;
+	word-wrap:break-word; 
+	word-break:break-all; 
+}
+.w-conpany-inc-btn{
+	text-align: center;
+}
+/*工商变更表*/
+.secDiv{
+	margin-top: 20px;
+}
+.w-table{
+	width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    
+}
+.w-table-body{
+	padding:0px 20px;
+}
+.w-table-body td,th{
+	padding: 10px 8px	;
+	border:1px solid #E1EBE8;
+	font-size: 14px;
+}
+.w-table-body td:first-child , .w-table-body td:nth-child(2){
+	text-align: center;
+}
+.w-table-blue-bg{
+	background:#f6fafd;
+	color: #9a9a9a;
+	width: 146px;
+	vertical-align: middle !important;
+}
+/*股东信息*/
+.w-heading-title{
+	padding: 6px 20px;
+}
+.w-heading-title-into{
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+}
+.w-heading-title .w-num{
+	font-size: 16px;
+	font-weight: bold;
+}
+.w-thead th{
+	background:#F5FAF9;
+	color: #9a9a9a;
+	text-align: center !important;
+	font-weight: 400;
+}
+.w-touzi-border{
+	border:1px solid #E1EBE8;
+	padding:1px 5px;
+}
+/*企业印象*/
+.w-conpany-border{
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+}
+/*基本信息结束*/
+/*风险信息*/
+.w-page-btn{
+	padding:0 20px;
+	text-align: right;
+}
+.w-new-icon{
+	background: #f34520;
+	color:white;
+	width: 53px;
+	height: 22px;
+	display: inline-block;
+	text-align: center;
+	line-height: 22px;
+	border-radius:10px;
+	font-size: 12px;
+}
+.w-new-icon ul li{
+	height: 30px;
+	margin-right: ;
+}
+.w-page-btn ul li a{
+	/*border: 1px solid red;*/
+	height: 30x;
+	color: #999999;
+	margin-right: 10px;
+}
+.w-page-btn ul li:nth-child(3) a{
+	color: #333;
+}
+.w-page-btn ul li:nth-child(3) a:first-child{
+	background-color: #2AC8A1;
+	color: white;
+}
+.w-page-btn ul li:nth-child(4) a{
+	color: #333333;
+}
+/*法院裁决*/
+.verdict th:nth-child(2) , .verdict th:nth-child(3){
+	width: 120px;
+}
+.verdict td a{
+	font-size: 16px;
+	color: #2AC8A1;
+}
+.verdict th:first-child{
+	width: 60px;
+}
+.verdict td:nth-child(3){
+	text-align: center;
+}
+/*被执行人信息*/
+.executor{
+	margin-bottom: 20px;
+}
+.executor th{
+	width: 220px;
+}
+.executor td{
+	text-align: center;
+}
+.executor th:first-child{
+	width: 60px;
+}
+.executor th:nth-child(2){
+	width: 120px;
+}
+.executor td:last-child a{
+	color: #2AC8A1;
+	float: right;
+	right: 10px;
+}
+/*企业年报*/
+.w-tbody-bg tr:nth-child(odd){
+	background: #f2f2f2;
+}

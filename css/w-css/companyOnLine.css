@@ -1,0 +1,311 @@
+@charset "utf-8";
+.w-container{
+	width:1200px;
+	margin:0 auto;
+}
+.w-company-list{
+	width: 100%;
+	padding:15px;
+	background: white;
+	height: 180px;
+	margin-top:30px;
+}
+.w-prcture{
+	width: 150px;
+	height:150px;
+	background-size:150px 150px !important ;
+	float: left;
+}
+.w-right-content{
+	padding-left: 170px;	
+}
+.w-right-content h4{
+	font-weight: 600;
+}
+.w-right-content p{
+	color:#666;
+	font-size:14px;
+}
+.w-right-content p span{
+	margin-right: 20px;
+}
+.w-option-box{
+	width: 100%;
+	margin:20px 0;
+}
+.w-option-nav{
+	width: 100%;
+	height:50px;
+	background: #FAFAFA;
+	border-bottom:1px solid #EBEBEB;
+}
+.w-option-nav li{
+	float: left;
+	width: 146px;
+	height:100%;
+	font-size:14px;
+	line-height: 50px;
+	text-align: center;
+	border-left: 1px solid #EBEBEB;
+	cursor: pointer;
+}
+.w-active{
+	background:white;
+	color:#29C9A0;
+	border-bottom: 2px solid white;
+	position: relative;
+	bottom:-1px;
+}
+.w-option-container{
+	background: white;
+	width: 100%;
+	padding:30px;
+	overflow: hidden;
+}
+.w-option-content textarea{
+	width:100%;
+	height: 220px;
+	border: 1px solid #EBEBEB;
+	padding:10px;
+}
+.w-company-photo{
+	margin-right: -30px;
+}
+.w-company-photo>div{
+	display: inline-block;
+	margin:30px 0;
+	margin-right: 30px;
+	position:relative;
+}
+.w-company-photo label{
+	width: 356px;
+	height: 250px;
+	background:url(../../img/w-img/add-small.png);
+	border:1px solid #E1EBE8;
+	/*margin:30px 0;
+	margin-right: 30px;*/
+	cursor: pointer;
+	background-size:356px 250px;
+}
+.w-close-prcture{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	color:white;
+	line-height: 40px;
+	text-align: center;
+	background: rgba(30, 30, 30, 0.6);
+	font-size: 18px;
+	top:-20px;
+	right:-20px;
+	display: none;
+}
+.w-company-photo label p{
+	text-align: center;
+	color:#999;
+	font-size: 14px;
+	margin-top:190px;
+}
+.w-company-photo input{
+	display: none;
+}
+.saveBut{
+	width: 100px;
+	height:36px;
+	background: #29C9A0;
+	color:white;
+}
+/*产品*/
+.w-addProdure{
+	width: 100%;
+	height: 130px;
+	border:1px solid #EBEBEB;
+	background: #F5FAF9;
+	margin-bottom:20px;
+}
+.w-addProdure label{
+	width: 130px;
+	height: 130px;
+	padding: 30px;
+}
+.w-addProdure span{
+	color:#999;
+}
+.w-error-icon{
+	font-size: 16px;
+	color:#999;
+	float: right;
+	cursor:pointer;
+	margin-top:10px;
+	margin-right: 10px;
+}
+.w-bianjiProduct-box{
+	width:100%;
+	height: 100%;
+	padding:20px 19px 20px 20px;
+}
+.w-bianjiProductPrcture{
+	width: 82px;
+	height:82px;
+	background: url(../../img/w-img/U0ZFM2PI.png) no-repeat;
+	background-size:82px;
+	margin-right: 20px;
+	display: inline-block;
+}
+.w-bianjiProductNameBox{
+	display: inline-block;
+	vertical-align: top;
+}
+.w-ProductName{
+	font-weight: 600;
+	color:#29C9A0;
+	margin-bottom: 10px;
+}
+.w-ProductXinghao{
+	margin-bottom:10px;
+}
+.w-ProductXinghao,.w-ProductAddress{
+	color:#666;
+	font-size: 14px;
+}
+.w-bianjiProduct-boxRight{
+	margin-top:25px;
+}
+.w-ProductPrice,.w-Product-compileBtn,.w-Product-removeBtn{
+	display: inline-block;
+}
+.w-ProductPrice span{
+	color:#F34520;
+	font-size: 18px;
+	margin-right: 80px;
+}
+.w-Product-compileBtn,.w-Product-removeBtn{
+	width: 100px;
+	height: 36px;
+	color:white;
+	background: #29C9A0;
+}
+.w-Product-removeBtn{
+	background: #F34520;
+	margin-left: 20px;
+}
+/*其他*/
+.w-rest-form{
+	width: 480px;
+	text-align: right;
+	margin-bottom: 20px;
+}
+.w-rest-form label{
+	color:#999;
+	font-size: 14px;
+	font-weight: 400;
+}
+.w-rest-form input,select{
+	width: 360px;
+	margin-left: 40px;
+	height:40px;
+	border:1px solid #d4d6da;
+}
+.w-rest-left{
+	float: left;
+}
+.w-rest-right{
+	padding-left: 570px;
+}
+/*模态框*/
+body{
+	position:relative;
+}
+.w-addModal{
+	display: none;
+	width:1200px;
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	margin:100px auto 0;
+	box-shadow: 0 0 1px #EBEBEB,
+   								 0 0 0 1000px rgba(0,0,0,.3);
+   	z-index: 9999;
+	background: white;
+}
+.w-modal-title{
+	width: 100%;
+	height: 60px;
+	background: #f7f7f7;
+	text-align: center;
+	font-weight:600;
+	line-height: 60px;
+}
+.w-modal-title span{
+	float:right;
+	margin-right:20px;
+	cursor:pointer;
+}
+.w-modalContent{
+	padding:30px;
+	overflow: hidden;
+}
+.w-modal-leftArea{
+	width: 540px;
+	float:left;
+}
+.w-inputList label{
+	font-size:14px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.w-inputList input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #EBEBEB;
+	margin-bottom: 20px;
+	padding-left:10px;
+}
+.w-inputList textarea{
+	height: 180px;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #EBEBEB;
+	padding:10px;
+}
+.w-inputListLeft{
+	float:left;
+	width: 250px;
+}
+.w-inputListRight{
+	padding-left: 289px;
+}
+.w-modalAdd span{
+	color:#999;
+	font-size:14px;
+	margin-left: 10px;
+}
+.w-modalSave{
+	margin-top:50px;
+}
+.w-closeBtn{
+	margin-left:40px;
+	color:#29C9A0;
+}
+.w-modal-rightArea{
+	margin-left: 600px;
+	width: 540px;
+}
+.w-modal-rightArea input{
+	display: none;
+}
+.w-modal-rightArea>label{
+	width: 160px;
+	height: 160px;
+	border:1px solid #EBEBEB;
+	background:url(../../img/w-img/add-yingye.png)no-repeat;
+	background-size:160px 160px;
+}
+.w-modal-rightArea>label p{
+	color:#999;
+	font-size:14px;
+	text-align: center;
+	margin-top:110px;
+}

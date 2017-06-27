@@ -1,0 +1,27 @@
+.page{
+	margin-top: 20px;
+}
+.page ul {
+	list-style-type: none;
+	overflow: hidden;
+	float: right;
+}
+
+.page ul li {
+	float: left;
+	border: 1px solid #29C9A0;
+	line-height: 25px;
+	margin-right: 10px;
+	font-size: 16px;
+	text-align: center;
+	/*background-color: green;*/
+	/*border-radius: 5px;*/
+	/*color: #0000FF;*/
+	padding:5px 10px ;
+	color: #29C9A0;
+	background-color: white;
+}
+.page ul li:first-child{
+	background-color: #29C9A0;
+	color: white;
+}

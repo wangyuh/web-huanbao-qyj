@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #29C9A0;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #29C9A0;
+}
+
+li {
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	background-color: #f2f3f5;
+}
+
+ 	/*搜索导航栏*/
+ .z-bulletin-board{
+ 	position: fixed;
+ 	top: 0px;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	color: #fff;
+	background-color: #313339; 
+	z-index: 10;
+}
+.black-nav{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.z-bulletin-board ul{
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+}
+.z-bulletin-board ul>li{
+	display: inline-block;
+	line-height: 40px;
+	margin-left: 60px;
+}
+.z-bulletin-board ul>li>span{
+	font-size: 14px !important;
+	opacity: 0.7;
+}
+.z-bulletin-board ul>li>img{
+	margin-top: -5px;
+}
+
+.search-result-top {
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	-webkit-box-shadow: 1px 2px 8px #ebebeb;
+    -moz-box-shadow: 1px 2px 8px #ebebeb;
+    box-shadow: 1px 2px 8px #ebebeb;
+	position: fixed;
+	top: 40px;
+	left: 0;
+	z-index: 10;
+}
+.search-result-nav {
+	width: 1200px;
+	margin: 0 auto;
+	height: 80px;
+}
+
+.search-result-nav img {
+	float: left;
+	margin-top: -40px;
+}
+
+.search-result-nav-search {
+	display: inline-block;
+	float: left;
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.search-result-nav-search input {
+	width: 488px;
+	height: 38px;
+	padding-left: 10px;
+	padding-right: 50px;
+	outline: none;
+	border: 1px solid #d9d9d9;
+	font-size: 16px;
+}
+
+.search-result-nav-search button {
+	background-color: #29c9a0;
+	color: #FFFFFF;
+	border: 1px solid transparent;
+	width: 50px;
+	height: 38px;
+	margin-left: -54px;
+	outline: none;
+	padding-top: 1.8px;
+}
+.search-result-nav{
+	position: relative;
+}
+.z-index-logo-con-r{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.z-index-logo-con-r ul li {
+    height: 45px;
+    line-height: 45px;
+    float: left;
+}
+
+.z-index-logo-con-r ul li span {
+    padding: 0 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+.z-index-logo-con-r a{
+	color: #666666;
+	font-size: 16px;
+}
+.personal-center-ul{
+	width: 110px;
+	border: 1px solid #29C9A0;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 40px;
+	/*left: 40px;*/
+	display: none;
+}
+.personal-center-ul>ul>li{
+	height: 32px;
+	line-height: 32px;
+}
+.personal-center-ul>ul>li>a{
+	width: 108px;
+	height: 32px;
+	line-height: 32px;
+	padding: 0px 20px;
+	display: inline-block;
+}
+.personal-center-ul>ul>li:first-of-type>a{
+	background-color: #f2f3f5;
+}
+.personal-center-ul>ul>li:last-of-type>a{
+	color: #F34520;
+}
+.w-head-photo{
+	display: inline-block;
+	width: 45px;
+	border-radius: 50%;
+	background-size:45px !important;
+	font-size: 20px;
+	text-align: center;
+	color:gray;
+	margin-right: 10px;
+}
+.w-nav-1>li:last-child{
+	background: #FAC113;
+	padding:0 20px ;
+}
+.w-nav-1>li:last-child a{
+	padding-left: 22px;
+	color:white;
+	background: url(../img/w-img/renling.png) no-repeat left center;
+}

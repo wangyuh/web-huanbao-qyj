@@ -1,0 +1,63 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>找回密码</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/w-css/register.css"/>
+	</head>
+	<body>
+		<div  class="keshiHeight">
+		<!--忘记密码页面-->
+		<article class="w-active">
+			<section class="w-register-left left">
+				<a href="homePage.html"><button class="w-reture-btn">返回首页</button></a>
+			</section>
+			<section class="w-register-right">
+				<div class="w-register-content">
+					<div class="w-title">忘记密码</div>
+					<form action="" method="post">
+						<div class="w-user">
+							<!--<div class="w-user-icom glyphicon glyphicon-user"></div>-->
+							<input type="text" name="" id="w-phone-number" value="" / placeholder="请输入手机号" maxlength="11" onblur="checkPhone()" style="padding-left:15px;">
+						</div>
+						<div class="w-error-message">
+							<span id="w-phone-error"></span>
+						</div>
+						<div class="w-user">
+							<!--<div class="w-user-icom glyphicon glyphicon-lock"></div>-->
+							<input type="password" name="" id="w-password" value="" / placeholder="请设置登录密码" onblur="checkPassword()" style="padding-left:15px;">
+						</div>
+						<div class="w-error-message">
+							<span id="w-password-error"></span>
+						</div>
+						<div class="w-auth-code-container">
+							<input type="text" class="w-input-code left" / placeholder="请输入验证码" onblur="checkCode()">
+							<div class="w-code-box"><canvas id="canvas" width="160" height="54">浏览器版本过低</canvas></div>
+						</div>
+						<div class="w-error-message">
+							<span id="w-code-error"></span>
+						</div>
+						<div class="w-user1">
+							<input type="text" class="left w-duanxin-input" / placeholder="请输入短信验证码" id="w-duanxin-input">
+							<input type="button" value="获取短信验证码"class="w-duanxin-box" onclick="getNote(this,'3')">
+						</div>
+						<div class="w-error-message">
+							<span  id="w-note-error"></span>
+						</div>
+						<div class="w-register-btn w-btn-active" onclick="forgetPass()">确定</div>
+					</form>
+					<div class='w-btn-container'>
+						<a href="register.html">登录</a>
+						<a href="login.html">注册</a>
+					</div>
+				</div>				
+			</section>
+		</article>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/w-js/jquery.md5.js"></script>
+		<script src="js/w-js/register.js"></script>
+	</body>
+</html>

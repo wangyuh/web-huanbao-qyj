@@ -1,0 +1,70 @@
+@charset "utf-8";
+a:hover{
+	text-decoration: none;
+}
+.w-zengzhi-title-bg{
+	background-image:url(../../img/black-bj.png) ;
+	width: 100%;
+	height: 160px;
+	padding-top:30px;
+}
+.w-zengzhi-title-box{
+	width: 1200px;
+	margin:0 auto;
+}
+.w-zengzhi-title-box div:first-child{
+	color:white;
+	font-size:20px;
+}
+.w-zengzhi-title-box div:last-child{
+	color:#AAABAE;
+	font-size: 16px;
+}
+.w-zengzhi-content-box{
+	width: 1200px;
+	margin:0 auto 106px;
+	position: relative;
+}
+.w-zengzhi-content-box:before{
+	content: '';
+	border-left: 1px solid #94e3d0;
+	position: absolute;
+	height: 110%;
+	left: 10px;
+	top: -20px;
+}
+.w-nav{
+	margin-top: 50px;
+	margin-right:50px ;
+	position: relative;
+}
+.w-nav li{
+	padding: 18px 43px;
+	margin-bottom: 20px;
+}
+.w-nav li a{
+	color:#333;
+	font-size: 16px;
+	font-weight:600;
+}
+.w-content{
+	width: 1000px;
+	margin-top:30px
+}
+.w-nav-artive{
+	background: #29c9a0;
+}
+.w-nav-artive a{
+	color:white !important;
+}
+.w-line-round{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border:2px solid #29c9a0;
+	border-radius: 10px;
+	top:-40px;
+	background:#29C9A0;
+	padding: 4px;
+	background-clip:content-box;
+}

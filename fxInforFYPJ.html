@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<!--<link rel="stylesheet" href="css/w-css/fxInformationItem.css">-->
+</head>
+<body>
+	<article>
+		<!-- 法院判决 -->
+		<div class="w-fx-infor-item">
+			<div class="w-fx-infor-container">
+				<div class="w-fx-infor-left">
+					<div class="w-fx-infor-title">
+						大标题
+					</div>
+					<div class="w-fx-infor-text">
+						李莉、刘东强、成都爱之伽商贸有限公司：本院受理原告中国民生银行股份有限公司成都分行诉被告融借款合同纠纷案，现依法向你们公告送达起诉状副本、应诉通知书、举证通知书、告知合议庭组通知书、开庭传票、(2016)川0191民初8941号、8941号之一民事裁定书及保全财产清单。
+					</div>
+					<div class="w-fy-infor">
+						<span class="w-fy-infor-one">
+							<span>审理法院：</span>
+							<span>广州知识产权法院</span>
+						</span>
+					</div>
+					<div class="w-release-time">
+						发布日期：<span class="w-fy-infor-one">2016-8-12</span>
+						编号：<span>(2016)xxxx</span>
+					</div>
+				</div>
+				<div  class="w-fx-infor-right">
+					<div class="w-fx-infor-right1">
+						<span class="w-fx-infor-right-sxr">法院判决</span>	
+						<span class="w-fx-infor-right-ckxq">查看详情</span>
+						<input type="hidden" name="" id="" value="" />
+					</div>					
+				</div>
+			</div>
+			<div class="w-fx-conpany-name">
+				<span>相关公司:</span>
+				<a href="#">南京五莲传感科技有限公司</a>
+				<a href="#">南京五莲传感科技有限公司</a>
+				<a href="#">南京五莲传感科技有限公司</a>
+			</div>
+		</div>
+	</article>
+	
+		
+	
+</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	   $(function  () {
+			var keySearch = sessionStorage.getItem('searchContent');
+	if (keySearch == '') {
+			var keyWord = $('.search-result-nav input').val('小米');
+			} else{
+			var keyWord = $('.search-result-nav input').val(keySearch);
+			}
+			var str1='<div class="aaa" style="border: 1px solid red;position: fixed;top: 500px;z-index: 200;background-color: white;">\n\n\n中华人民共和国最高人民法院\n\n民 事 裁 定 书\n\n（2014）民申字第825号\n\n\n\n再审申请人（一审被告、二审上诉人）：中铁（惠州）铁路有限公司，住所地广东省惠州市惠城区下埔南三街九号。\n\n法定代表人：黄远开，该公司董事长。\n\n委托代理人：魏忠平，广东广法律师事务所律师。\n\n再审申请人（一审被告）：惠州铁路公司，住所地广东省惠州市惠城区下埔南三街九号。</div>';
+			console.log(str1);
+			re=/(\n(?=(\n+)))+/g  ;
+           var str2=str1.replace(re,"<br />");
+//			$('.w-fx-infor-item').append(str2);
+			$.post('https://120.27.236.240:8443/interface/judicial/sentence/getListByName?enterpriseName=小米科技').done(function  (patent) {
+				console.log(patent);
+				var searchNum = patent.body.length;
+				$('.search-number').html(searchNum);
+				$('.search-company').html($('.search-result-nav input').val());
+					if (patent.body.length == 0) {
+					var bidList = '<div class="no-message">暂无相关信息</div>';
+					 $('.search-list-bg').append(bidList);
+				} else{
+						for (var i =0;i<patent.body.length;i++) {
+						var patentList = '<article><div class="w-fx-infor-item"><div class="w-fx-infor-container"><div class="w-fx-infor-left"><div class="w-fx-infor-title">'+
+						judgeIsContent(patent.body[i].title) + '</div><div class="w-fx-infor-text">'+ 
+					judgeIsContent(patent.body[i].content)	+ '</div><div class="w-fy-infor"><span class="w-fy-infor-one"><span>审理法院：</span><span>'+
+						judgeIsContent(patent.body[i].court) + '</span></span></div><div class="w-release-time">发布日期：<span class="w-fy-infor-one">'+
+						judgeIsContent(patent.body[i].publishTime) +'</span>编号：<span>'+ judgeIsContent(patent.body[i].caseCode)
+						+'</span></div></div><div  class="w-fx-infor-right"><div class="w-fx-infor-right1"><span class="w-fx-infor-right-sxr">法院判决</span><span class="w-fx-infor-right-ckxq">查看详情</span><input type="hidden" name="" id="" value="'+ i
+						+'" /></div></div></div><div class="w-fx-conpany-name"><span>相关公司:</span><a href="#">'+
+						judgeIsContent(patent.body[i].enterpriseName) +'</a></div></div></article>';
+				  $('.search-list-bg').append(patentList);
+				}	
+				seeDetail (patent);
+				}
+			});
+			
+//			查看详情
+            	//	   	模态框
+            	function seeDetail (patent) {
+            		 $('.w-fx-infor-right-ckxq').click(function  () {
+            		 	    var i = $(this).siblings("input[type='hidden']").val();
+	   	 	                  $('.see-details').show();
+	   	 	                  var publishTime = judgeIsContent(patent.body[i].publishTime);
+							var publishType = judgeIsContent(patent.body[i].type);
+							var aboutCompany = judgeIsContent(patent.body[i].enterpriseName);
+							var publishCourt = judgeIsContent(patent.body[i].publishCourt);
+							var publishContent = judgeIsContent(patent.body[i].content);
+	   	 	                  $('.see-detail-time span').html(publishTime);
+	   	 	                  $('.see-detail-type').html(publishType);
+	   	 	                  $('.see-detail-people span').html(aboutCompany);
+	   	 	                  $('.see-detail-fyuan span').html(publishCourt);
+	   	 	                  $('.see-detail-content span').html(publishContent);
+	   	 	                  
+	   	        });
+	   	        $('.see-detail-title').click(function  () {
+	   	        	 $('.see-details').hide();
+	   	        });
+            	}
+            	
+            	function judgeIsContent (name) {
+					if (name == 'null') {
+					    return '- -';
+				} else{
+					 return  name;
+				}
+					}
+            	
+	   });
+		
+	</script>
+</html>

@@ -1,0 +1,176 @@
+.em{
+	color: red;
+}
+.select_result{
+	width: 923px;	
+	margin: 0 auto;
+}
+.select_result>div{
+width: 925px;
+	border-bottom: 1px solid #EBEBEB;
+}
+.trademark{
+	width: 100%;
+	height: 198px;
+	/*border: 1px solid red;*/
+	padding: 30px;
+}
+/*商标内容*/
+.trademark>div{
+	display: inline-block;
+}
+.trademark_left{
+	width: 680px;
+	/*border: 1px solid red;*/ 
+}
+.trademark_left>div{
+	display: inline-block;
+}
+.trademark_left_logo{
+	/*border: 1px solid red;*/
+	position: relative;
+	top: -30px;
+}
+.trademark_left_logo>img{
+    width: 84px;
+	height: 84px;
+}
+.trademark_left_text{
+    margin-left: 25px;
+}
+.trademark_left_text .see-details{
+	color: #29C9A0 !important;
+}
+.trademark_left_text p{
+	margin-bottom: 10px;
+}
+.trademark_left_text p:first-child{
+	color: #333;
+	font-size: 20px;
+}
+.trademark_left_text p:first-child span{
+    padding: 2px 8px;
+    background-color:#edeef0;
+    color: #9f9f9f;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+.trademark_left_text p:nth-child(2) span{
+	padding: 5px 10px;
+	font-size: 14px;
+	background-color: #edeef0;
+	color: #666;
+	margin-right: 20px;
+}
+.trademark_left_text p:nth-child(3){
+	color: #666666;
+}
+.trademark_left_text p:nth-child(3) span:first-child{
+	margin-right: 40px;
+}
+.trademark_left_text p:nth-child(3) span a{
+	color: #29C9A0;
+}
+.trademark_left_text p:nth-child(4){
+	color: #666666;
+}
+.trademark_left_text p:nth-child(4) span{
+	color: #2AC8A1;
+}
+.trademark_left_text p:nth-child(4) span a{
+	color: #29C9A0;
+}
+.trademark_left_text p:nth-child(5) {
+	color: #9F9F9F;
+}
+/*中间内容*/
+.trademark_content{
+	/*border: 1px solid;*/
+	position: relative;
+	top: -50%;
+}
+.trademark_content span {
+	border: 1px solid #2ac8a1;
+	color: #2ac8a1;
+	display: inline-block;
+	text-align: center;
+	line-height: 26px;
+	width: 60px;
+	height: 26px;
+	border-radius: 13px;
+}
+/*右边内容*/
+.trademark_right{
+	position: relative;
+	top: -50%;
+	left: 38px;
+}
+.trademark_right1{
+	position: relative;
+	top: -46%;
+	left: 75px;
+}
+.trademark_right a{
+	width: 83px;
+	display: inline-block;
+	height: 31px;
+	background-color:#2ac8a1;
+	color: white;
+	line-height: 31px;
+	text-align: center;
+}
+/*专利左边内容*/
+.patent{
+	width: 100%;
+	height: 230px;
+	/*border: 1px solid red;*/
+	padding: 30px;
+}
+.patent>div{
+	display: inline-block;
+}
+.see-details{
+	cursor: pointer;
+}
+.patent p:nth-child(2){
+	width: 620px;
+	color: #9f9f9f;
+	font-size: 14px;
+}
+.patent p:nth-child(3) span:last-child{
+	color: #2AC8A1;
+}
+.patent p:nth-child(4) span{
+	color: #666666;
+	margin-right: 40px;
+}
+/*著作权*/
+.copyright{
+	width: 100%;
+	height: 170px;
+	padding: 30px;
+}
+.copyright>div{
+	display: inline-block;
+}
+.copyright .trademark_left_text p:nth-child(2){
+	color: #666666;
+}
+.copyright .trademark_left_text p:nth-child(2) span{
+	background-color: white;
+	color: #666666;
+}
+.copyright .trademark_left_text p:nth-child(2) span a{
+	color: #29C9A0;
+}
+/*.copyright .trademark_left_text p:nth-child(2) span:last-child{
+	color: #2AC8A1;
+}*/
+.copyright .trademark_left_text p:last-child{
+	color: #999;
+}
+.copyright .trademark_left_text p:last-child span{
+	color: #999;
+	margin-right: 40px;
+}

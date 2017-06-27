@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/w-css/register.css"/>
+	</head>
+	<body>
+		<div  class="keshiHeight">
+		<!--注册页面-->
+		<article class="w-active">
+			<section class="w-register-left left">
+				<a href="homePage.html"><button class="w-reture-btn">返回首页</button></a>
+			</section>
+			<section class="w-register-right">
+				<div class="w-register-content">
+					<div class="w-title">注册</div>
+					<form action="" method="post">
+						<div class="w-user">
+							<div class="w-user-icom glyphicon glyphicon-user"></div>
+							<input type="text" name="phone" id="w-phone-number" value="" / placeholder="请输入手机号码" maxlength="11" onblur="checkPhone()">
+						</div>
+						<div class="w-error-message">
+							<span  id="w-phone-error"></span>
+						</div>
+						<div class="w-user">
+							<div class="w-user-icom glyphicon glyphicon-lock"></div>
+							<input type="password" name="" id="w-password" value="" / placeholder="请设置登录密码" onblur="checkPassword()" autocomplete="off" onfocus="this.type='password'" 
+>
+						</div>
+						<div class="w-error-message">
+							<span id="w-password-error"></span>
+						</div>
+						<div class="w-auth-code-container">
+							<input type="text" class="w-input-code left" / placeholder="请输入验证码" onblur="checkCode()">
+							<div class="w-code-box"><canvas id="canvas" width="160" height="54">浏览器版本过低</canvas></div>
+						</div>
+						<div class="w-error-message">
+							<span id="w-code-error"></span>
+						</div>
+						<div class="w-user1">
+							<input type="text" class="left w-duanxin-input" / placeholder="请输入短信验证码" id="w-duanxin-input">
+							<input type="button" value="获取短信验证码"class="w-duanxin-box" onclick="getNote(this,'2')">
+						</div>
+						<div class="w-error-message">
+							<span  id="w-note-error"></span>
+						</div>
+						<div class="w-register-btn w-btn-active" onclick="login()">注册</div>
+						<a href="register.html"><div class="w-register-btn" style="margin-top:20px">登录</div></a>
+						<div class="w-user-deal">注册代表已同意<a href="javascript:void(0);">《用户协议》</a></div>
+					</form>
+				</div>				
+			</section>
+		</article>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/w-js/jquery.md5.js"></script>
+		<script src="js/w-js/register.js"></script>
+	</body>
+</html>

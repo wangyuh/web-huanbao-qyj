@@ -1,0 +1,321 @@
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-family: "微软雅黑";
+			font-size: 14px;
+		}
+		
+		.industry {
+			background-color: white;
+			width: 274px;
+			position: relative;	
+		}
+		
+		.industry ul {
+			list-style-type: none;
+			font-size: 14px;
+			border: 1px solid gainsboro;
+			border-left: 0px;
+			
+		}
+		.industry ul li {
+      padding-left: 20px;
+      height: 32px;
+      line-height: 32px;
+      width: 272px;
+      cursor: pointer;
+      font-size: 14px;
+      background-color: #FFFFFF;
+    }
+    .industry ul li:hover{
+      background-color: #f5f9fc;
+    }
+		.industry ul:first-child {
+		border: 1px solid gainsboro;
+		padding: 0px;
+		}
+		
+		.industry ul:first-child li {
+			width: 272px;
+			height: 32px;
+			
+			line-height: 32px;
+			color: #262626;
+			padding-left: 15px;
+			overflow: hidden;
+		}
+		
+		.industry ul:first-child li:first-child {
+			background-color: #f1f1f1;
+		}
+		
+		.industry ul:first-child li span {
+			float: right;
+			font-size: 12px;
+			margin-top: 8px;
+			margin-right: 6px;
+			color: #ccc;
+		}
+.search-result-content {
+	background-color: #f2f3f5;
+}
+
+.search-result-content-center {
+	width: 1200px;
+	margin: 110px auto 0;
+	overflow: hidden;
+}
+
+.search-result-content-left {
+	margin-top: 30px;
+	width: 920px;
+	border-top: 1px solid #EBEBEB;
+	float: left;
+}
+
+.search-result-content-right {
+	margin-top: 30px;
+	width: 260px;
+	float: right;
+}
+
+.list-check {
+	margin-bottom: 0;
+	overflow: hidden;
+	height: 49px;
+}
+
+.list-check li {
+	display: inline-block;
+	width: 120;
+	height: 49px;
+	line-height: 49px;
+	float:left;
+	font-size: 16px;
+	border-radius: 0;
+	text-align: center;
+	border-top:1px solid #EBEBEB;
+}
+
+.list-check li>a {
+	width: 120px;
+	display: inline-block;
+	height: 49px;
+	line-height: 45px;
+	text-align: center;
+	text-decoration: none;
+	color: #666666;
+	font-size: 16px;
+}
+
+.navbar {
+	min-height: 49px;
+	margin-bottom: 0;
+}
+
+.search-result-content-left .list-check .left-border {
+	border-left: 1px solid #ebebeb;
+}
+
+.list-hover:hover {
+	background-color: #eee;
+}
+.list-hover{
+	background-color: #fafafa;
+	border-bottom: 1px solid red;
+}
+.list-check .navbar {
+	cursor: pointer;
+	border: none;
+	border-bottom: 1px solid #EBEBEB;
+	min-height: 0;
+}
+
+.list-check .list-null {
+	display: inline-block;
+	height: 49px;
+	width: 315px;
+	float: left;
+	border: 1px solid #ebebeb;
+	border-left:none;
+	border-top: none;
+	background-color: #fafafa;
+}
+
+.list-check .list-item {
+	border-right: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+	border-bottom: none;
+	background-color: #FFFFFF;
+	
+}
+.list-check .list-item>a{
+	color: #29C9A0;
+}
+.environment-protection{
+	width: 900px;
+}
+
+.environment-protection>ul {
+	display: inline-block;
+	margin: 20px 0;
+	padding: 0;
+	margin-left: 30px;
+}
+.environment-protection>ul>li>a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 1px;
+	margin: 0 10px;
+}
+.environment-protection a:hover{
+	text-decoration: none;
+}
+.environment-protection>ul>li {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+}
+.environment-protection>ul>.tab-control-default {
+	background-color:#28c8a2;
+	color: #FFFFFF;
+}
+.tab-control-hover:hover{
+	background-color: #28c8a2;
+	color: #FFFFFF;
+}
+.search-result-vip,
+.search-result-page-link {
+	width: 260px;
+	height: 158px;
+	margin-bottom: 20px;
+}
+
+.search-result-history {
+	border-top: 1px solid gainsboro;
+}
+.search-result-history>ul{
+	margin-bottom: 0;
+}
+.search-result-history>ul>li {
+	border: 1px solid #ebebeb;
+	border-top: none;
+	background-color: #FFFFFF;
+}
+
+.recent-view {
+	height: 49px;
+	line-height: 49px;
+	font-size: 16px;
+	font-weight: 700;
+	text-indent: 20px;
+	background-color:#fafafa ;
+}
+
+.view-company-name:hover {
+	text-decoration: none;
+	color: #29C9A0;
+}
+
+.view-company-name {
+	font-size: 16px;
+	padding-left: 20px;
+	display: inline-block;
+	margin-top: 15px;
+	color: #29C9A0;
+}
+
+.view-company-time {
+	font-size: 12px;
+	color: #9a9a9a;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.page-footer{
+	color: #999999;
+	text-align: center;
+	font-size: 14px;
+}
+.page-footer>span{
+	color: #29C9A0;
+	font-size: 14px;
+}	
+
+.no-message{
+	height: 500px; 
+	line-height: 500px;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	color: #29C9A0;
+}
+
+/*查看详情*/
+.see-details{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.see-detail-moudel{
+	width: 700px;
+	min-height: 500px;
+	margin: 30px auto 0;
+	background-color: #FFFFFF;
+	padding: 20px;
+}
+.see-detail-title{
+	text-align: center;
+	font-size: 16px;
+	color: #666666;
+}
+.see-detail-title>img{
+	float: right;
+	cursor: pointer;
+}
+.see-detail-time{
+	text-align: center;
+	font-size: 14px;
+	color: #999999;
+	margin: 10px 0;
+}
+.see-detail-type{
+	color: #333333;
+	font-size: 20px;
+	border-top: 3px solid #29C9A0;
+	margin-top: 20px;
+	padding: 20px 0;
+	border-bottom: 1px solid #EBEBEB;
+}
+.see-detail-people,.see-detail-fyuan,.see-detail-content{
+	font-size: 14px;
+	color: #999999;
+}
+.see-detail-people>span,.see-detail-fyuan>span,.see-detail-content>span{
+	color: #666666;
+	margin-left: 10px;
+	line-height: 25px;
+}
+.see-detail-people{
+	margin-top: 10px;
+}
+.see-detail-content{
+	margin-top: 10px;
+	border-top: 1px solid #EBEBEB;
+	padding: 10px 0;
+}
+.see-detail-content>span{
+	width: 605px;
+	display: inline-block;
+	vertical-align: top;
+}

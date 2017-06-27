@@ -1,0 +1,122 @@
+/*我的订单*/
+.content_right>p>button {
+	width: 70px;
+	height: 30px;
+	border: 1px solid lawngreen;
+	background-color: white;
+}
+.content_right>p>button:first-child {
+	background-color: lawngreen;
+	border: 1px solid black;
+}
+
+.content_right>p>button:nth-child(2) {
+	margin-left: 20px;
+	margin-right: 500px;
+}
+
+
+/*我的订单信息*/
+.content_right_textOrder{
+	
+}
+
+.content_right_textOrder>table {
+	width: 850px;
+	margin-top: 20px;
+}
+
+.content_right_textOrder>table th {
+	/*border: 1px solid red;*/
+	text-align: left;
+	font-weight: 100;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+}
+
+.content_right_textOrder>table th {
+	text-align: left;
+}
+
+.content_right_textOrder>table th:nth-child(2) {
+	width: 390px;
+}
+
+.content_right_textOrder>table th:last-child {
+	text-align: right;
+}
+
+.content_right_textOrder>table th:last-child button {
+	border: 1px solid black;
+	background-color: white;
+}
+
+.content_right_textOrder>table .pice {
+	/*border: 1px solid red;*/
+	/*width: 100px;*/
+	margin-top: 15px;
+	position: relative;
+}
+
+.content_right_textOrder>table .pice .bias {
+	display: inline-block;
+	border: 1px solid black;
+	width: 100px;
+	position: absolute;
+}
+
+.content_right_textOrder>table tr:nth-child(2) h2 {
+	display: inline-block;
+	float: left;
+	margin-top: 5px;
+}
+
+.content_right_textOrder>table td {
+	text-align: right;
+}
+
+.content_right_textOrder>table tr:nth-child(2) td:first-child {
+	text-align: right;
+}
+
+.content_right_textOrder>table tr:nth-child(3) td:first-child {
+	width: 1000px;
+}
+
+.content_right_textOrder>table td h2 {
+	display: inline-block;
+}
+
+.numOrder {
+	margin-right: 20px;
+}
+
+.immediately {
+	width: 82px;
+	height: 50px;
+	border: 1px solid gray;
+	background-color: white;
+}
+/*已支付页面*/
+.content_right_textOrder2{
+	display: none;
+}
+.content_right_textOrder2>table {
+	width: 850px;
+	margin-top: 20px;
+}
+
+.content_right_textOrder2>table th {
+	/*border: 1px solid red;*/
+	text-align: left;
+	font-weight: 100;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+}
+
+.content_right_textOrder2>table th {
+	text-align: left;
+}
+.content_right_textOrder2>table td:nth-child(2) {
+	text-align: center;	
+}

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.claimbanner{
+	color: #fff;
+	height: 160px;
+	padding-top: 35px;
+	background-image:url(../../img/y-img/black-bj.png) ;
+	position: relative;
+}
+.claimbanner>div p:last-child{
+	color: #999;
+}
+.claimconten{
+	background-color: #f2f3f5;
+	/*margin-top: -30px;*/
+}
+.claimconten .claimcon{
+	background-color: #fff;
+	/*padding: 30px 0 90px;*/
+}
+.claimcon-header{
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	color: #f34520;
+	background-color: #fff;
+	border-bottom: 1px solid #e1ebe8;
+	margin-top: -30px;
+	position: relative;
+	z-index: 2;
+	/*box-sizing:;*/
+}
+.entry-charter{
+	width: 160px;
+	height: 160px;
+	background-color: #f5faf9;
+	border: 1px solid #e1ebe8;
+	text-align: center;
+	color: #999;
+	margin: 30px auto;
+}
+
+.entry-charter span{
+	font-size: 80px;
+}
+
+.claim-content{
+	width: 585px;
+	margin: 0 auto;
+}
+.claim-taga{
+	width: 65px;
+	text-align: right;
+	
+}

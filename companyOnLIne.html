@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>认领企业</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/z-css/homePage.css"/>
+		<link rel="stylesheet" href="css/commonTop.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/w-css/companyOnLine.css" />
+	</head>
+	<body>
+		<!--header-->
+		<div class="common-top">
+		</div>
+		<!--content-->
+		<article class="w-container">
+			<!--公司列表-->
+			<div class="w-company-list">
+				<div class="w-prcture" style="background: url(img/w-img/ewfrqewfaq.png);"></div>
+				<div class="w-right-content">
+					<!--<h4>北京京东世纪贸易有限公司</h4>
+					<p>有限责任公司（法人独资）</p>
+					<p>法人代表：<span>刘强东</span>注册资金：<span>10000万元</span>行业类型：<span>电商贸易</span></p>
+					<p>成立日期：2017-12-10</p>-->
+				</div>
+			</div>
+			<div class="w-option-box">
+				<ul class="w-option-nav">
+					<li class="w-active">企业简介</li>
+					<li>产品</li>
+					<li>其他</li>
+				</ul>
+				<div class="w-option-container">
+					<!--企业简介-->
+					<div class="w-option-content">
+						<textarea placeholder="请输入具体的企业介绍"></textarea>	
+						<div class="w-company-photo">
+							<!--<label>
+								<input type="file"/>
+								<p>点击添加企业图片</p>
+								<div class="w-close-prcture">×</div>
+							</label>
+							<label>
+								<input type="file"/>
+								<p>点击添加企业图片</p>
+								<div class="w-close-prcture">×</div>
+							</label>-->
+							<div >
+								<div class="w-close-prcture">×</div>
+								<label>
+									<input type="file"/>
+									<p>点击添加企业图片</p>
+								</label>
+							</div>
+							<div >
+								<div class="w-close-prcture">×</div>
+								<label>
+									<input type="file"/>
+									<p>点击添加企业图片</p>
+								</label>
+							</div>
+							<div >
+								<div class="w-close-prcture">×</div>
+								<label>
+									<input type="file"/>
+									<p>点击添加企业图片</p>
+								</label>
+							</div>
+						</div>						
+						<input type="button" value="保存" class="saveBut"/>
+					</div>
+					<!--产品-->
+					<div class="w-option-content"  style="display: none;">
+						<div class="w-product">
+							<div class="w-addProdure" id="w-addProdure">
+								<label>
+									<img src="img/ADD.png" alt="" />
+									<!--<input type="file" style="display: none;"/>-->
+								</label>
+								<span>点击添加企业产品</span>
+							</div>
+							<div class="w-addProdure">
+								<label>
+									<img src="img/ADD.png" alt="" />
+									<!--<input type="file" style="display: none;"/>-->
+								</label>
+								<span>点击添加企业产品</span>
+							</div>
+							<div class="w-addProdure">
+								<div class="w-bianjiProduct-box">
+									<div class="left">
+										<div class="w-bianjiProductPrcture"></div>
+										<div class="w-bianjiProductNameBox">
+											<div class="w-ProductName">消防增压稳压设备箱泵一体化</div>
+											<div class="w-ProductXinghao">型号：1101</div>
+											<div class="w-ProductAddress">生产企业：江苏思科瑞数据科技有限公司</div>
+										</div>
+									</div>
+									<div class="right w-bianjiProduct-boxRight">
+										 <div class="w-ProductPrice">价格：<span>2985元/吨</span></div>
+										 <input type="button" class="w-Product-compileBtn" value="编辑"/>
+									 <input type="button" class="w-Product-removeBtn" value="删除"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<input type="image" src="img/ad.png" id="addNode">
+						<div class="glyphicon glyphicon-remove w-error-icon"></div>
+					</div>
+					<!--其他-->
+					<div class="w-option-content"   style="display: none;">
+						<div class="w-rest-left">
+							<div class="w-rest-form">
+								<label for="">联系电话</label>
+								<input type="text" />
+							</div>
+							<div class="w-rest-form">
+								<label for="">公司地址</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="w-rest-form">
+								<label for="">企业简称</label>
+								<input type="text" />
+							</div>							
+							<div class="w-rest-form">
+								<label for="">传真电话</label>
+								<input type="text" />
+							</div>
+							<input type="button" value="保存" class="saveBut" style="margin-left: 120px;"/>
+						</div>
+						<div class="w-rest-right">
+								<div class="w-rest-form">
+								<label for="">公司网站</label>
+								<input type="text" />
+							</div>
+							<div class="w-rest-form">
+								<label for="">公司邮箱</label>
+								<input type="text" />
+							</div>
+							<div class="w-rest-form">
+								<label for="">企业英文名</label>
+								<input type="text" />
+							</div>	
+							<div class="w-rest-form">
+								<label for="">公司规模</label>
+								<select name="">
+									<option value=""></option>
+								</select>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!--footer-->
+		<div class="common-footer">
+				
+		</div>
+		<!--模态框-->
+		<div class="w-addModal">
+			<div class="w-modal-title">添加产品 <span>×</span></div>
+			<div class="w-modalContent">
+				<form action="">
+					<div class="w-modal-leftArea">
+						<div class="w-inputList">
+							<label for="">产品名称</label>
+							<input type="text" required="required" placeholder="请输入具体的产品名称"/>
+						</div>
+						<div class="w-inputList">
+							<label for="">产品介绍</label>
+							<textarea type="text" required="required" placeholder="请输入具体的产品介绍"></textarea>
+						</div>
+						<div class="w-inputListLeft">
+							<div class="w-inputList">
+								<label for="">价格</label>
+								<input type="text" required="required" placeholder="请输入具体的产品介绍"/>
+							</div>
+							<div class="w-inputList">
+								<label for="">单位</label>
+								<input type="text" required="required" placeholder="请输入具体的产品介绍"/>
+							</div>
+						</div>
+						<div class="w-inputListRight">
+							<div class="w-inputList">
+								<label for="">条件</label>
+								<input type="text" required="required" placeholder="请输入具体的产品介绍"/>
+							</div>
+							<div class="w-inputList">
+								<label for="">型号</label>
+								<input type="text" required="required" placeholder="请输入具体的产品介绍"/>
+							</div>
+						</div>
+						<div class="w-modalAdd"><img src="img/ad.png" alt="" /><span>添加更多参数</span></div>
+						<div class="w-modalSave">
+							<input type="button" value="保存" class="saveBut" />
+							<input type="text" class="w-closeBtn" value="取消"/>
+						</div>
+					</div>
+					<div class="w-modal-rightArea">
+						<div class="w-inputList">
+								<label>产品图片</label>
+						</div>
+						<div></div>
+							<label>
+								<input type="file"/>
+								<p>点击添加产品图片</p>
+							</label>
+							<label>
+								<input type="file"/>
+								<p>点击添加产品图片</p>
+							</label>
+							<label>
+								<input type="file"/>
+								<p>点击添加产品图片</p>
+							</label>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.common-top').load('fixedTop.html');
+			$('.common-footer').load('commonFooter.html');
+		});
+		/*选项卡*/
+		$(".w-option-nav").find("li").each(function(index) {
+		    $(this).click(function() {
+		      $(this).addClass('w-active').siblings().removeClass('w-active');
+		      $(".w-option-content").hide().eq(index).show();
+		    });
+		 });
+		 /*克隆*/
+		 $("#addNode").click(function(){
+		 	$(".w-product").append($("#w-addProdure").clone(true));
+		 });
+		 /*删除*/
+		 $(".w-error-icon").click(function(){
+		 	if(($(".w-addProdure").length)>1){
+		 		$(".w-addProdure").last().remove();
+		 	}else{
+		 		alert("不能全部删除哦！！！")
+		 	}
+		 });
+		 /*模态框*/
+		 $(".w-addProdure").click(function(){
+		 	$(".w-addModal").show();
+		 });
+		 $(".w-modal-title span").click(function(){
+		 	$(".w-addModal").hide();
+		 });
+		 /*企业简介添加图片删除图片*/
+		 $(".w-company-photo input").change(function(){
+		 	var the=$(this)
+			 var simpleFile = this.files[0];
+			    if(!/image\/\w+/.test(simpleFile.type)) {
+			        alert("请确保文件类型为图像类型");
+			        return false;
+			    }
+			    var reader = new FileReader();
+			    // 将文件以二进制文件读入页面中
+			    reader.readAsBinaryString(simpleFile);
+			    reader.onload = function(f){
+			        var src = "data:" + simpleFile.type + ";base64," + window.btoa(this.result);
+			        	the.parent().css({
+			        		background:"url("+src+") no-repeat",
+			        		backgroundSize:"100% 100%",
+			        	}).children("p").css({
+			        		color:"rgba(255, 255, 255, 0)"
+			        	}).parent().prev("div").show();
+			    }
+		 })
+		 $(".w-close-prcture").click(function(){
+				$(this).hide().next("label").removeAttr("style").children("p").removeAttr("style").prev("input").val("");
+		 })
+		 $.ajax({
+		 	url:'https://120.27.236.240:8443/interface/user/getUserInfo',
+		 	data:{userID:1},
+		 	type:"post",
+		 	success:function(data){
+		 		if(data.code=="SUCCESS"){
+		 			companyInfor(data.body.enterpriseID)	
+		 		}
+		 	}
+		 })
+		 function companyInfor(eID){
+		 	$.ajax({
+		 		url:'https://120.27.236.240:8443/env/interface/online/getDetailByEnterpriseId',
+		 		data:{enterpriseId:eID},
+		 		type:"get",
+		 		success:function(data){
+		 			var content='<h4>'+data.body.enterpriseName+'</h4>'
+												+'<p>有限责任公司（法人独资）</p>'
+												+'<p>法人代表：<span>--</span>注册资金：<span>--</span>行业类型：<span>'+data.body.enterpriseIndustry+'</span></p>'
+												+'<p>成立日期：'+data.body.createTime+'</p>';
+												$(".w-right-content").append(content);
+		 		}
+		 	});
+		 }
+	</script> 	
+</html>

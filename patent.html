@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>专利</title>
+	</head>
+	<body>
+		<!--<div class="select_result">-->
+			<!--专利-->
+			<!--<div class="patent">-->
+				<!--专利左边内容-->
+				<!--<div class="trademark_left">
+					<div class="trademark_left_text">
+						<p class="see-details">Zigbee 技术发明专利</p>
+						<p>而除了智慧养老，该系统还是一张巨大的家庭安全网。家庭安防是每个家庭都非常重视的，如果人，
+						   这个系统也会守护我们的家。一旦陌生分子绕过了家庭的摄像机等安防产品，非法入侵，地...</p>
+						<p>申请人：<span class="em">刘强东 </span>申请公司：<span>南京物联传感科技有限公司</span></p>
+						<p>申请号 ：<span>京 123456</span>主分类号 ：<span>商 123456</span></p>
+						<p>申请日期：2016-11-31</p>
+					</div>
+					
+				</div>-->
+				<!--专利中间内容-->
+				<!--<div class="trademark_content">
+					<span>专利</span>
+				</div>-->
+				<!--专利右边内容-->
+				<!--<div class="trademark_right1">
+					<img src="img/statar.png"/>
+				</div>
+			</div>
+		</div>-->
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	   $(function  () {
+			var keySearch = sessionStorage.getItem('searchContent');
+	if (keySearch == '') {
+			var keyWord = $('.search-result-nav input').val('小米');
+			} else{
+			var keyWord = $('.search-result-nav input').val(keySearch);
+			}
+			$.post('https://120.27.236.240:8443/interface/qualifications/Patent/getListByEnterpriseID?enterpriseId=95756072&pageSize=10&pageNum=1').done(function  (patent) {
+				console.log(patent);
+				var searchNum = patent.body.pageSize * patent.body.pages;
+				$('.search-number').html(searchNum);
+				$('.search-company').html($('.search-result-nav input').val());
+				function judgeIsContent (name) {
+					if (name == 'null') {
+					    return '- -';
+				} else{
+					 return  name;
+				}
+					}
+					if (patent.body.list.length == 0) {
+					var bidList = '<div class="no-message">暂无相关信息</div>';
+					 $('.search-list-bg').append(bidList);
+				} else{
+						for (var i =0;i<patent.body.list.length;i++) {
+							var bidId = patent.body.list[i].id;
+						var patentList = '<div class="select_result"><div class="patent"><div class="trademark_left"><div class="trademark_left_text"><p class="see-details">'+
+						judgeIsContent(patent.body.list[i].patentName) +'</p><p>而除了智慧养老，该系统还是一张巨大的家庭安全网。家庭安防是每个家庭都非常重视的，如果人，这个系统也会守护我们的家。一旦陌生分子绕过了家庭的摄像机等安防产品，非法入侵，地...</p><p>申请人：<span class="em">'+
+						judgeIsContent(patent.body.list[i].inventor) +'</span>申请公司：<span><a href="company.html?companyId='+ judgeIsContent(patent.body.list[i].enterpriseID)+'">'+ judgeIsContent(patent.body.list[i].enterpriseName) 
+						+'</a></span></p><p>申请号 ：<span>'+judgeIsContent(patent.body.list[i].applicationNo)
+						+'</span>主分类号 ：<span>'+judgeIsContent(patent.body.list[i].classificationNo)+'</span></p><p>申请日期：'+judgeIsContent(patent.body.list[i].authorizedDate)
+						+'</p></div></div><div class="trademark_content"><span>专利</span></div><div class="trademark_right1 bidImg' + i+'"></div></div></div>';
+						follNum(bidId, i);
+				  $('.search-list-bg').append(patentList);
+				}	
+				}
+				
+			});
+			
+//			判断收藏状态
+			function follNum(bidId, i) {
+				(function(num) {
+					$.post('https://120.27.236.240:8443/interface/options/Collect/getStatus?userID=1&tenderId=' + bidId + '&type=9').done(function(like) {
+						if(like.body == false) {
+							var commenImg = '<img src="img/statar.png"/>';
+						} else if(like.body == true) {
+							var commenImg = '<img src="img/statar-jihuo.png"/>';
+						}
+						collect(like, bidId, i);
+						$('.bidImg' + i).children().remove();
+						$('.bidImg' + i).append(commenImg);
+					});
+				})(i);
+			};
+			
+			//    点击添加收藏  
+			function collect(like, bidId, i) {
+				$('.bidImg' + i).click(function() {
+					if(like.body == false) {
+						var collectUrl = 'https://120.27.236.240:8443/interface/options/Collect/add';
+						$(this).children().attr('src', 'img/statar-jihuo.png');
+						like.body = true
+					} else if(like.body == true) {
+						var collectUrl = 'https://120.27.236.240:8443/interface/options/Collect/delete';
+						$(this).children().attr('src', 'img/statar.png');
+						like.body = false
+					}
+					$.ajax({
+						url: collectUrl,
+						data: {
+							tenderId: bidId,
+							type: 9,
+							userID: 1
+						},
+						type: 'POST',
+						dataType: 'json',
+						success: function(data) {}
+					});
+
+				});
+			}
+			
+	   });
+		
+	</script>
+</html>

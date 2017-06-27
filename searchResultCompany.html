@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索结果</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/z-css/searchResult.css" />
+		<link rel="stylesheet" type="text/css" href="css/w-css/citys.css" />
+		<link rel="stylesheet" type="text/css" href="css/z-css/z_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/commonTop.css" />
+		<link rel="stylesheet" type="text/css" href="css/z-css/commonFooter.css" />
+		<link rel="stylesheet" type="text/css" href="css/w-css/loading.css" />
+		<link rel="stylesheet" type="text/css" href="css/mricode.pagination.css" />
+		<link rel="stylesheet" type="text/css" href="css/f-css/paging.css" />
+	</head>
+
+	<body>
+		<!--搜索结果 页面 -->
+		<div class="search-result-pages">
+			<!-- 公告栏 -->
+			<div class="z-bulletin-board">
+				<div class="black-nav">
+					<ul>
+						<li>
+							<img src="img/z-img/dianhua-.png" />
+							<span>400-7170-900</span>
+						</li>
+						<li>
+							<img src="img/z-img/mail.png" />
+							<span>2569408172@qq.com</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="search-result-top">
+				<div class="search-result-nav">
+					<a href="homePage.html">
+						<img src="img/z-img/logo.png" />
+					</a>
+					<form class="search-result-nav-search" action="" method="post" onsubmit="return false">
+						<input class="search-text-content" type="text" name="" value="" placeholder="请输入" />
+						<button type="button" class="glyphicon glyphicon-search search-company-button"></button>
+						<!--<input class="glyphicon glyphicon-search" type="submit" value=""/>-->
+					</form>
+
+					<div class="z-index-logo-con-r fix">
+						<ul class="w-nav-1" style="display: none;">
+							<li class="w-head-photo"></li>
+							<li class="register">
+								<a href="javascript:void(0);"></a>
+								<div class="personal-center-ul">
+									<ul>
+										<li>
+											<a href="info.html">个人信息</a>
+										</li>
+										<li>
+											<a href="member.html">会员中心</a>
+										</li>
+										<li>
+											<a href="order.html">我的订单</a>
+										</li>
+										<li>
+											<a href="account.html">账号设置</a>
+										</li>
+										<li>
+											<a href="myCompanys.html">关注企业</a>
+										</li>
+										<li>
+											<a href="collection.html">我的收藏</a>
+										</li>
+										<li>
+											<a href="demands.html">企业需求</a>
+										</li>
+										<li>
+											<a href="evaluate.html">我的评价</a>
+										</li>
+										<li>
+											<a href="news1.html">消息盒子</a>
+										</li>
+										<li>
+											<a href="monitor.html">监控中心</a>
+										</li>
+										<li>
+											<a class="username-quit">退出</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><span>|</span></li>
+							<li>
+								<a href="vip.html">VIP服务</a>
+							</li>
+							<li><span>|</span></li>
+							<li>
+								<a href="#">认领公司</a>
+							</li>
+						</ul>
+						<ul class="w-nav-2">
+							<li class="register">
+								<a href="register.html">登录</a>
+							</li>
+							<li><span>|</span></li>
+							<li>
+								<a href="login.html">注册</a>
+							</li>
+							<li><span>|</span></li>
+							<li>
+								<a href="vip.html">VIP服务</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="search-result-content">
+				<div class="search-result-content-center">
+					<div class="search-result-content-left">
+						<ul class="list-check">
+							<li class="list-item navbar">
+								<a href="searchResultCompany.html">企业</a>
+							</li>
+							<li class="navbar list-hover">
+								<a href="searchEnvironmentProtect.html">环保</a>
+							</li>
+							<li class="navbar list-hover">
+								<a href="searchRiskInformation.html">风险信息</a>
+							</li>
+							<li class="navbar list-hover">
+								<a href="searchIntellectualProperty.html">知识产权</a>
+							</li>
+							<li class="navbar list-hover">
+								<a href="searchForThebid.html">招中标</a>
+							</li>
+							<li class="list-null"></li>
+						</ul>
+						<!--企业页面-->
+						<div class="environment-protection">
+							<!-- 企业模块 -->
+							<div class="enterprise">
+								<div class="search-condition-module">
+									<!-- 搜索范围 -->
+									<div class="enter-scope">
+										<div class="search-container fix">
+											<div class="search-title">搜索范围</div>
+											<div class="search-content fix">
+												<span class="fwsearch search-content-list-on">全部</span>
+												<ul class="search-content-list-ul fix">
+													<li>
+														<a href="#">公司名称 </a>
+													</li>
+													<li>
+														<a href="#">股东</a>
+													</li>
+													<li>
+														<a href="#">法人代表</a>
+													</li>
+													<li>
+														<a href="#">高管</a>
+													</li>
+													<li>
+														<a href="#">经营范围</a>
+													</li>
+													<li>
+														<a href="#">网址</a>
+													</li>
+													<li>
+														<a href="#">产品</a>
+													</li>
+													<li>
+														<a href="#">商标</a>
+													</li>
+													<li>
+														<a href="#">专利</a>
+													</li>
+													<li>
+														<a href="#">著作权作品名称</a>
+													</li>
+													<li>
+														<a href="#">软件著作权名称</a>
+													</li>
+													<li>
+														<a href="#">环保资质</a>
+													</li>
+												</ul>
+											</div>
+											<div class="search-content-more">更多</div>
+										</div>
+									</div>
+
+									<!-- 注册资本 -->
+									<div class="capital">
+										<div class="search-container fix">
+											<div class="search-title">注册资本</div>
+											<div class="search-content fix">
+												<span class="fwsearch search-content-list-on">全部</span>
+												<ul class="search-content-list-ul fix">
+													<li>
+														<a href="#">0万 - 100万</a>
+													</li>
+													<li>
+														<a href="#">100万 - 200万</a>
+													</li>
+													<li>
+														<a href="#">200万 - 500万</a>
+													</li>
+													<li>
+														<a href="#">500 - 1000万</a>
+													</li>
+													<li>
+														<a href="#">1000万以上</a>
+													</li>
+												</ul>
+											</div>
+											<div class="search-content-more">更多</div>
+										</div>
+									</div>
+
+									<!-- 成立年限 -->
+									<div class="establishment">
+										<div class="search-container fix">
+											<div class="search-title">成立年限</div>
+											<div class="search-content fix">
+												<span class="fwsearch search-content-list-on">全部</span>
+												<ul class="search-content-list-ul fix">
+													<li>
+														<a href="#">成立1年内</a>
+													</li>
+													<li>
+														<a href="#">成立1 - 5年</a>
+													</li>
+													<li>
+														<a href="#">成立 5 - 10年</a>
+													</li>
+													<li>
+														<a href="#">成立10 - 15年内</a>
+													</li>
+													<li>
+														<a href="#">成立15年以上</a>
+													</li>
+												</ul>
+											</div>
+											<div class="search-content-more">更多</div>
+										</div>
+									</div>
+
+									<!-- 高级筛选 -->
+									<div class="advanced search-containe-static">
+										<div class="fix">
+											<div class="search-title">高级筛选</div>
+											<div class="search-content fix bt25">
+												<div class="btn-group" role="group">
+													<a data-toggle="dropdown" class="toggle" aria-expanded="false">商标</a>
+													<ul class="dropdown-menu" role="menu">
+														<li>
+															<a href="#" class="selected">全部</a>
+														</li>
+														<li>
+															<a href="#">有商标</a>
+														</li>
+														<li>
+															<a href="#">无商标</a>
+														</li>
+													</ul>
+												</div>
+												<div class="btn-group" role="group">
+													<a data-toggle="dropdown" class="toggle" aria-expanded="false">专利</a>
+													<ul class="dropdown-menu" role="menu">
+														<li>
+															<a href="#" class="selected">全部</a>
+														</li>
+														<li>
+															<a href="#">有专利</a>
+														</li>
+														<li>
+															<a href="#">无专利</a>
+														</li>
+													</ul>
+												</div>
+												<div class="btn-group" role="group">
+													<a data-toggle="dropdown" class="toggle" aria-expanded="false">失信信息</a>
+													<ul class="dropdown-menu" role="menu">
+														<li>
+															<a href="#" class="selected">全部</a>
+														</li>
+														<li>
+															<a href="#">有失利信息</a>
+														</li>
+														<li>
+															<a href="#">无失利信息</a>
+														</li>
+													</ul>
+												</div>
+												<div class="btn-group" role="group">
+													<a data-toggle="dropdown" class="toggle" aria-expanded="false">动产抵押</a>
+													<ul class="dropdown-menu" role="menu">
+														<li>
+															<a href="#" class="selected">全部</a>
+														</li>
+														<li>
+															<a href="#">有动产抵押</a>
+														</li>
+														<li>
+															<a href="#">无动产抵押</a>
+														</li>
+													</ul>
+												</div>
+												<div class="btn-group" role="group">
+													<a data-toggle="dropdown" class="toggle" aria-expanded="false">欠税信息</a>
+													<ul class="dropdown-menu" role="menu">
+														<li>
+															<a href="#" class="selected">全部</a>
+														</li>
+														<li>
+															<a href="#">有欠税信息</a>
+														</li>
+														<li>
+															<a href="#">无欠税信息</a>
+														</li>
+													</ul>
+												</div>
+												<div class="btn-group" role="group">
+													<a data-toggle="dropdown" class="toggle" aria-expanded="false">股权出质</a>
+													<ul class="dropdown-menu" role="menu">
+														<li>
+															<a href="#" class="selected">全部</a>
+														</li>
+														<li>
+															<a href="#">有股权出质</a>
+														</li>
+														<li>
+															<a href="#">无股权出质</a>
+														</li>
+													</ul>
+												</div>
+												<div class="btn-group" role="group">
+													<a data-toggle="dropdown" class="toggle" aria-expanded="false">行政处罚</a>
+													<ul class="dropdown-menu" role="menu">
+														<li>
+															<a href="#" class="selected">全部</a>
+														</li>
+														<li>
+															<a href="#">有行政处罚</a>
+														</li>
+														<li>
+															<a href="#">无行政处罚</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- 区域行业 -->
+									<div class="regional">
+										<div class="fix search-containe-static1">
+											<div class="search-title">搜索范围</div>
+											<div class="search-content fix">
+												<div class="btn-group w-search-range-content" role="group">
+													<a data-toggle="dropdown" class="toggle w-regional-title" aria-expanded="false">区域</a>
+													<ul class="w-citys-container">
+														<li>
+															<div class="w-citys-container-top "><span class="w-citys-name w-active">不限区域</span></div>
+														</li>
+														<li style="margin-top:6px">
+															<ul class="w-citys-container-center">
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">北京</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">上海</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">广州</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">深圳</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">天津</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">重庆</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">杭州</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">成都</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">南京</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">苏州</span><br />
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">大连</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-name">武汉</span>
+																	</div>
+																</li>
+															</ul>
+														</li>
+														<li style="margin-top:6px">
+															<ul class="w-citys-container-bottom">
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">A</span>
+																		<span class="w-citys-name">安徽</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>合肥</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>芜湖</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>淮南</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>安庆</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宿州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阜阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>亳州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>黄山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>滁州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>淮北</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>铜陵</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宣城</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>六安</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>巢湖</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>池州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>蚌埠</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>马鞍山</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">B</span>
+																		<span class="w-citys-name">北京</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">C</span>
+																		<span class="w-citys-name">重庆</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">F</span>
+																		<span class="w-citys-name">福建</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>福州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>泉州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>漳州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>龙岩</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>南平</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>厦门</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宁德</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>莆田</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>三明</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">G</span>
+																		<span class="w-citys-name">甘肃</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>兰州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>平凉</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>庆阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>武威</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>金昌</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>酒泉</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>天水</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>陇南</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>临夏</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>合作</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>白银</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>定西</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>张掖</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>嘉峪关</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">G</span>
+																		<span class="w-citys-name">贵州</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>贵阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>安顺</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>都匀</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>兴义</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>铜仁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>毕节</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>六盘水</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>遵义</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>凯里</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">G</span>
+																		<span class="w-citys-name">广东</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>深圳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>广州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>惠州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>梅州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>汕头</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>珠海</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>佛山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>肇庆</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>湛江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>江门</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>河源</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>清远</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>云浮</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>东莞</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>中山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阳江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>揭阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>茂名</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>汕尾</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>韶关</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>潮州</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">G</span>
+																		<span class="w-citys-name">广西</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>南宁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>柳州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>来宾</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>桂林</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>梧州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>防城港</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>贵港</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>玉林</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>百色</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>钦州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>河池</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>北海</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>崇左</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>贺州</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">H</span>
+																		<span class="w-citys-name">河北</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>石家庄</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>张家口</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>秦皇岛</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>承德</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>唐山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>沧州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>衡水</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>邢台</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>邯郸</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>保定</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>廊坊</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">H</span>
+																		<span class="w-citys-name">河南</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>郑州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>新乡</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>许昌</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>信阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>南阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>开封</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>洛阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>商丘</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>焦作</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>鹤壁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>濮阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>周口</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>漯河</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>济源</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>安阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>平顶山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>驻马店</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>三门峡</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">H</span>
+																		<span class="w-citys-name">黑龙江</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>哈尔滨</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>牡丹江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>佳木斯</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>绥化</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>黑河</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>双鸭山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>伊春</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>大庆</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>七台河</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>鸡西</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>鹤岗</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>齐齐哈尔</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>大兴安岭</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">H</span>
+																		<span class="w-citys-name">湖北</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>武汉</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>荆州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>黄冈</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宜昌</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>恩施</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>十堰</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>神农架</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>随州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>荆门</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>天门</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>仙桃</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>潜江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>襄阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>鄂州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>孝感</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>黄石</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>咸宁</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">H</span>
+																		<span class="w-citys-name">湖南</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>长沙</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>株洲</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>衡阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>郴州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>常德</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>益阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>娄底</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>邵阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>岳阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>张家界</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>怀化</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>永州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>吉首</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>湘潭</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">H</span>
+																		<span class="w-citys-name">海南</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>海口</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>三亚</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>东方</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>临高</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>澄迈</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>儋州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>昌江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>白沙</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>琼中</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>定安</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>屯昌</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>琼海</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>文昌</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>保亭</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>万宁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>陵水</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>乐东</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>五指山</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">J</span>
+																		<span class="w-citys-name">吉林</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>长春</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>延吉</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>四平</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>白山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>白城</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>辽源</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>松原</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>吉林</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>通化</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">J</span>
+																		<span class="w-citys-name">江苏</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>苏州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>无锡</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>南京</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>镇江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>南通</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>扬州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宿迁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>徐州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>淮安</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>连云港</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>常州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>泰州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>盐城</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">J</span>
+																		<span class="w-citys-name">江西</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>南昌</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>上饶</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>抚州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宜春</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>鹰潭</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>赣州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>景德镇</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>萍乡</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>新余</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>九江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>吉安</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">L</span>
+																		<span class="w-citys-name">辽宁</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>沈阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>鞍山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>抚顺</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>本溪</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>丹东</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>葫芦岛</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>营口</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阜新</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>辽阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>铁岭</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>朝阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>盘锦</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>大连</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>锦州</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">N</span>
+																		<span class="w-citys-name">内蒙古</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>呼和浩特</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>乌海</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>集宁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>通辽</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阿拉善</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>鄂尔多斯</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>临河</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>锡林浩特</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>呼伦贝尔</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>乌兰浩特</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>包头</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>赤峰</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">N</span>
+																		<span class="w-citys-name">宁夏</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>银川</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>中卫</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>固原</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>石嘴山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>吴忠</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">Q</span>
+																		<span class="w-citys-name">青海</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>西宁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>黄南</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>海北</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>果洛</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>玉树</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>海西</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>海东</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>海南</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">S</span>
+																		<span class="w-citys-name">山东</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>济南</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>潍坊</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>临沂</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>菏泽</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>滨州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>东营</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>威海</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>枣庄</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>日照</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>莱芜</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>聊城</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>青岛</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>淄博</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>德州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>烟台</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>济宁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>泰安</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">S</span>
+																		<span class="w-citys-name">山西</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>太原</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>临汾</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>运城</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>朔州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>忻州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>长治</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>大同</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阳泉</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>晋中</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>晋城</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>吕梁</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">S</span>
+																		<span class="w-citys-name">陕西</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>西安</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>延安</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>榆林</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>铜川</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>商洛</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>安康</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>汉中</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宝鸡</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>咸阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>渭南</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">S</span>
+																		<span class="w-citys-name">上海</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">S</span>
+																		<span class="w-citys-name">四川</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>成都</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>自贡</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>绵阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>南充</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>达州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>遂宁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>广安</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>巴中</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>泸州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宜宾</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>内江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>资阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>乐山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>眉山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>凉山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>雅安</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>甘孜</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阿坝</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>德阳</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>广元</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>攀枝花</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">T</span>
+																		<span class="w-citys-name">天津</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">X</span>
+																		<span class="w-citys-name">西藏</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>拉萨</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>山南</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阿里</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>昌都</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>那曲</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>日喀则</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>林芝</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">X</span>
+																		<span class="w-citys-name">新疆</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>乌鲁木齐</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>石河子</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>图木舒克</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>五家渠</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>昌吉</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>吐鲁番</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>库尔勒</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阿拉尔</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阿克苏</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>喀什</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>伊宁</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>塔城</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>哈密</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>和田</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阿勒泰</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>阿图什</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>博乐</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>克拉玛依</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">Y</span>
+																		<span class="w-citys-name">云南</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>昆明</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>红河</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>文山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>玉溪</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>楚雄</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>普洱</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>昭通</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>临沧</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>怒江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>香格里拉</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>丽江</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>德宏</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>景洪</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>大理</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>曲靖</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>保山</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="w-citys-item">
+																		<span class="w-citys-pinyin">Z</span>
+																		<span class="w-citys-name">浙江</span>
+																	</div>
+																	<div class="w-citys-toggle-container" style="display:none">
+																		<div class="srlangle-border-up"></div>
+																		<div class="area-all-inner">
+																			<span>全部</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>杭州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>舟山</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>湖州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>嘉兴</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>金华</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>绍兴</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>台州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>温州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>丽水</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>衢州</span>
+																		</div>
+																		<div class="area-all-inner">
+																			<span>宁波</span>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="btn-group" style="position: relative;">
+													<a data-toggle="dropdown" class="toggle-industry toggle" aria-expanded="false" style="position: relative;top: -25px;">行业</a>
+													<div class="industry" style="position: absolute;top: 5px;left: 0;z-index: 5;display: none;">
+														<ul class="sel">
+															<li>不限行业</li>
+															<li>农、林、牧、渔业<span class="glyphicon glyphicon-play"></span></li>
+															<li>采矿业<span class="glyphicon glyphicon-play"></span></li>
+															<li>制造业<span class="glyphicon glyphicon-play"></span></li>
+															<li>电力、热力、燃气及水生产和供应产业<span class="glyphicon glyphicon-play"></span></li>
+															<li>建筑业<span class="glyphicon glyphicon-play"></span></li>
+															<li>批发和零售业<span class="glyphicon glyphicon-play"></span></li>
+															<li>交通运输、仓库和邮政业<span class="glyphicon glyphicon-play"></span></li>
+															<li>住宿和餐饮业<span class="glyphicon glyphicon-play"></span></li>
+															<li>信息传输、软件和信息技术服务业<span class="glyphicon glyphicon-play"></span></li>
+															<li>金融业<span class="glyphicon glyphicon-play"></span></li>
+															<li>房地产业<span class="glyphicon glyphicon-play"></span></li>
+															<li>租赁和商务服务业<span class="glyphicon glyphicon-play"></span></li>
+															<li>科学研究和技术服务业<span class="glyphicon glyphicon-play"></span></li>
+															<li>水利、环境和公共设施管理业<span class="glyphicon glyphicon-play"></span></li>
+															<li>居民服务、修理和其他服务业<span class="glyphicon glyphicon-play"></span></li>
+															<li>教育<span class="glyphicon glyphicon-play"></span></li>
+															<li>卫生和社会工作<span class="glyphicon glyphicon-play"></span></li>
+															<li>文化、体育和娱乐业<span class="glyphicon glyphicon-play"></span></li>
+															<li>公共管理、社会保障和社会组织<span class="glyphicon glyphicon-play"></span></li>
+															<li>国际组织<span class="glyphicon glyphicon-play"></span></li>
+														</ul>
+														<!--二级选项-->
+														<!--农、林、牧、渔业-->
+														<ul>
+															<li>农业</li>
+															<li>林业</li>
+															<li>畜牧业</li>
+															<li>渔业</li>
+															<li>农、林、牧、渔服务业</li>
+														</ul>
+														<!--采矿业-->
+														<ul>
+															<li>煤炭开采和洗选业</li>
+															<li>石油和天然气开采业</li>
+															<li>黑色金属矿采选业</li>
+															<li>有色金属矿采选</li>
+															<li>非金属矿采选业</li>
+															<li>开采辅助活动</li>
+															<li>其他采矿业</li>
+														</ul>
+														<!--制造业-->
+														<ul>
+															<li>农副食品加工业</li>
+															<li>食品制造业</li>
+															<li>酒、饮料和精制茶制造业</li>
+															<li>烟草制造业</li>
+															<li>纺织业</li>
+															<li>纺织服装、服饰业</li>
+															<li>皮革、毛皮、羽毛及其制品和制鞋业</li>
+															<li>木材加工和木、竹、藤、棕、草制品业</li>
+															<li>家具制造业</li>
+															<li>造纸和纸制品</li>
+															<li>印刷和记录媒介复制业</li>
+															<li>文教、工美、体育和娱乐用品制造业</li>
+														</ul>
+														<!--电力、热气-->
+														<ul>
+															<li>电力、热力生产和供应业</li>
+															<li>燃气生产和供应业</li>
+															<li>水的生产和供应业</li>
+														</ul>
+														<!--建筑业-->
+														<ul>
+															<li>房屋建筑业</li>
+															<li>土木工程建筑业</li>
+															<li>建筑装饰和其他建筑业</li>
+															<li>建筑安装业</li>
+														</ul>
+														<!--批发和零售业-->
+														<ul>
+															<li>批发业</li>
+															<li>零售业</li>
+														</ul>
+														<!--交通运输、仓库和邮政业-->
+														<ul>
+															<li>铁路运输业</li>
+															<li>道路运输业</li>
+															<li>航空运输业</li>
+															<li>管道运输业</li>
+															<li>装卸搬运和运输代理业</li>
+															<li>仓储业</li>
+															<li>邮政业</li>
+														</ul>
+														<!--住宿和餐饮业-->
+														<ul>
+															<li>住宿业</li>
+															<li>餐饮业</li>
+														</ul>
+														<!--信息传输-->
+														<ul>
+															<li>电信、广播电视和卫星传输</li>
+															<li>互联网和相关服务</li>
+															<li>如见和信息技术服务业</li>
+														</ul>
+														<!--金融业-->
+														<ul>
+															<li>货币金融服务</li>
+															<li>资本市场服务</li>
+															<li>保险业</li>
+															<li>其他金融业</li>
+														</ul>
+														<!--房地产业-->
+														<ul>
+															<li>房地产业</li>
+														</ul>
+														<!--租赁业和商务服务业-->
+														<ul>
+															<li>租赁业</li>
+															<li>商务服务业</li>
+														</ul>
+														<!--科学研究和技术服务业-->
+														<ul>
+															<li>研发和试验发展</li>
+															<li>专业技术服务业</li>
+															<li>科技推广和应用服务业</li>
+														</ul>
+														<!--水利、环境和公共设施管理业-->
+														<ul>
+															<li>研究和试验发展</li>
+															<li>专业技术服务业</li>
+															<li>科技推广和应用服务</li>
+														</ul>
+														<!--居民服务、修理和其他服务业-->
+														<ul>
+															<li>居民服务业</li>
+															<li>机动车、电子产品和日用产品休息业</li>
+															<li>其他服务业</li>
+														</ul>
+														<!--教育-->
+														<ul>
+															<li>教育</li>
+														</ul>
+														<!--卫生和社会工作-->
+														<ul>
+															<li>卫生</li>
+															<li>社会工作</li>
+														</ul>
+														<!--文化、体育和娱乐业-->
+														<ul>
+															<li>新闻和出版业</li>
+															<li>广播、电视、电影和影视录音制作业</li>
+															<li>文化艺术业</li>
+															<li>体育</li>
+															<li>娱乐业</li>
+														</ul>
+														<!--公共管裤、社会保障和社会组织-->
+														<ul>
+															<li>中国共产党机关</li>
+															<li>国家机构</li>
+															<li>人民政协、民主党派</li>
+															<li>社会保障</li>
+															<li>群众团体、社会团体和其他成员组织</li>
+															<li>基层群众自治组织</li>
+														</ul>
+														<!--国际组织-->
+														<ul>
+															<li>国际组织</li>
+														</ul>
+
+													</div>
+													<!--</ul>-->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="search-module-slider">
+									收起
+								</div>
+
+								<!-- 查询到的信息介绍 -->
+								<div class="enterpriseResult">
+									<div class="row">
+										<!-- 一句话 -->
+										<div class="search-performance">
+											<span>找到</span>
+											<span class="search-number">219</span>
+											<span>条“</span>
+											<span class="search-company">小米</span>
+											<span>”相关结果,普通会员最多查看100条数据,</span>
+											<span class="search-vip"><a href="vip.html">升级VIP会员</a></span>
+											<span>可查看全部结果</span>
+										</div>
+
+										<!-- 查到的内容 -->
+										<div class="search_content">
+											<!-- 查询部分 -->
+											<div class="deep-search-hide fix">
+												<div class="deep-search-conditions fix" style="accelerator: 1px solid #EBEBEB;">
+													<div class="deep-search-conditions-left">
+														<span class="deep-search-company-name">公司</span>
+														<span class="deep-search-type-default">
+									                    <span class="deep-search-value">默认排序</span>
+														<div class="deep-search-select-types">
+															<div type="normal" class="deep-search-select-lists">默认排序</div>
+															<div class="deep-search-select-lists">默认排序</div>
+															<div class="deep-search-select-lists">默认排序</div>
+															<div class="deep-search-select-lists">默认排序</div>
+															<div class="deep-search-select-lists">默认排序</div>
+														</div>
+														</span>
+													</div>
+
+													<div class="deep-search-conditions-right">
+														<span class="deep-search-company-state">状态</span>
+														<span class="deep-search-company-follow">关注</span>
+													</div>
+												</div>
+											</div>
+
+											<!-- 查到的内容 -->
+											<div class="search-list-bg" ng-view>
+												<!--<div class="spinner">
+													<div class="spinner-container container1">
+														<div class="circle1"></div>
+														<div class="circle2"></div>
+														<div class="circle3"></div>
+														<div class="circle4"></div>
+													</div>
+													<div class="spinner-container container2">
+														<div class="circle1"></div>
+														<div class="circle2"></div>
+														<div class="circle3"></div>
+														<div class="circle4"></div>
+													</div>
+													<div class="spinner-container container3">
+														<div class="circle1"></div>
+														<div class="circle2"></div>
+														<div class="circle3"></div>
+														<div class="circle4"></div>
+													</div>
+												</div>-->
+												<!--<div class="search-ent-row fix">
+													<div class="search-ent-left">
+														<div class="search-ent-left-img">
+															<div class="search-ent-left-img-container">
+																
+															</div>
+														</div>
+														<div class="search-ent-left-content">
+															<a target="_blank" class="search-result-company-name" href="company.html">
+																<b style="color:rgb(0,95,178)">山西沁州黄<b style="color:red">小米</b>集团沁县<b style="color:red">小米</b>加工有限公司</b>
+															</a>
+															<div class="search-result-company-info">
+																<span>法定代表人： 雷军</span>
+																<span>成立 5 - 10 年</span>
+																<span>注册资本： 185000 万人民币</span>
+															</div>
+															<div class="search-result-company-history">
+																<span class="search-result-company-address">
+								       法定代表人： 雷军
+								    </span>
+															</div>
+															<div class="search-result-function">
+																<span class="comment">评论 ( 1732 )</span>
+																<span class="browse">浏览 ( 370266 )</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="search-ent-right">
+														<ul>
+															<li class="search-ent-right-lists">
+																<div class="company-state-type">开业</div>
+															</li>
+															<li class="search-ent-right-lists">
+																
+																<div class="is-follow">
+																	<div class="alert-module-center">
+																		<ul>
+																			<li>竞争对手</li>
+																			<li>商户</li>
+																			<li>供应商</li>
+																			<li>经销商</li>
+																		</ul>
+																	</div>
+																	<img src="img/zhuanzhu-on.png" />
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>-->
+											</div>
+										</div>
+										<div class="page">
+											<ul class="pages"></ul>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-header" style="height: 30px; border: 1px solid #ebebeb;">
+							<!--分页符-->
+							<div id="page" class="m-pagination">
+
+							</div>
+						</div>
+						<div class="page-footer" style="height: 30px;border: 1px solid #ebebeb;">
+							升级成为<span>VIP</span>会员，可查看5000条相关结果
+						</div>
+
+					</div>
+					<div class="search-result-content-right">
+						<div class="search-result-vip">
+							<a href="vip.html">
+								<img src="img/vip_big.png" />
+							</a>
+						</div>
+						<div class="search-result-page-link">
+							<a href="#">
+								<img src="img/bunner-renling.png" />
+							</a>
+						</div>
+						<div class="search-result-vip">
+							<a href="#">
+								<img src="img/app-bunner.png" />
+							</a>
+
+						</div>
+						<div class="search-result-history">
+							<ul>
+								<li>
+									<div class="recent-view">
+										浏览历史
+									</div>
+								</li>
+								<!--<li>
+									<a href="#" class="view-company-name">
+										上海小米金融信息服务有限公司
+									</a>
+									<div class="view-company-time">
+										2016-11-14 11:31 查询
+									</div>
+								</li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="common-footer">
+
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mricode.pagination.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/w-js/citys.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/z-js/z_style.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/history.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			var keySearch = sessionStorage.getItem('searchContent');
+			if(keySearch == '') {
+				var keyWord = $('.search-result-nav input').val('小米');
+			} else {
+				var keyWord = $('.search-result-nav input').val(keySearch);
+			}
+			//						alert(keySearch);
+			//						alert(keyWord);
+			$.post('https://120.27.236.240:8443/interface/enterprise/enterpriseinfo/searchInfoList?keyword=小米&queryType=1&sortType=0&pageNum=1').done(function(data) {
+				//		alert(keyWord);
+				console.log(data);
+
+				function companyPage() {
+					$('.search-list-bg').children().remove();
+					var searchNum = data.body.list.length * data.body.allPage;
+					$('.search-number').html(searchNum);
+					$('.search-company').html($('.search-result-nav input').val());
+					console.log(data);
+
+					function judgeIsContent(name) {
+						if(name == 'null') {
+							return '- -';
+						} else {
+							return name;
+						}
+					}
+					if(data.body.list.length == 0) {
+						var searchCompany = '<div class="no-message">暂无相关信息</div>';
+						$('.search-list-bg').append(searchCompany);
+					} else {
+						for(var i = 0; i < data.body.list.length; i++) {
+							var companyId = data.body.list[i].id;
+							var searchCompany = '<div class="search-ent-row fix"><div class="search-ent-left"><div class="search-ent-left-img"><div class="search-ent-left-img-container"><img src="img/default.png" alt=""></div></div><div class="search-ent-left-content"><a target="_blank" class="search-result-company-name" href="company.html?companyId=' + companyId +
+								'">' + data.body.list[i].titleName +
+								'</a><div class="search-result-company-info"><span>法定代表人：' + judgeIsContent(data.body.list[i].legalPerson) + '</span><span>成立 - - - 年</span><span>注册资本： ' + judgeIsContent(data.body.list[i].registeredCapital) +
+								'万人民币</span></div><div class="search-result-company-history"><span class="search-result-company-address">公司地址：' + judgeIsContent(data.body.list[i].address) +
+								'</span></div><div class="search-result-function inden' + i + '"></div></div></div><div class="search-ent-right"><ul><li class="search-ent-right-lists"><div class="company-state-type">' + judgeIsContent(data.body.list[i].operatingState) +
+								'</div></li><li class="search-ent-right-lists"><div class="is-follow commenimg' + i +
+								'"></div></li></ul></div></div>';
+							//评论,浏览，收藏函数回调
+							follNum(companyId, i);
+							$('.search-list-bg').append(searchCompany);
+						}
+					}
+				}
+				companyPage();
+				var url = 'https://120.27.236.240:8443/interface/enterprise/enterpriseinfo/searchInfoList?keyword=小米&queryType=1&sortType=0&pageNum=';
+				page(data.body.allPage,url,companyPage);
+
+			});
+			$('.search-result-top').on('click', '.search-company-button', function() {
+				$('.search-list-bg').children().remove();
+				var keyWord = $('.search-text-content').val();
+				var pageNum = 1;
+				$('.search-company').html($('.search-text-content').val());
+				sessionStorage.setItem('searchContent', keyWord);
+				var keyWord = sessionStorage.getItem('searchContent');
+				var allPage;
+				//				 $("#page").pagination({
+				//                      pageSize: 10,
+				//                      total: allPage
+				//                  });
+
+				//$('#page').on('pageClicked',function  (event,data) {
+				//	var pageNum = data.pageIndex;
+
+				$.post('https://120.27.236.240:8443/interface/enterprise/enterpriseinfo/searchInfoList?keyword=' + keyWord + '&queryType=1&sortType=0&pageNum=' + pageNum).done(function(data) {
+					console.log(data);
+					allPage = data.body.allPage;
+					//        var searchNum = data.body.list.length * data.body.allPage;
+					//        $('.search-number').html(searchNum);
+					function companyPage() {
+						$('.search-list-bg').children().remove();
+
+						function judgeIsContent(name) {
+							if(name == 'null') {
+								return '- -';
+							} else {
+								return name;
+							}
+						}
+						if(data.body.list.length == 0) {
+							var searchCompany = '<div class="no-message">暂无相关信息</div>';
+							$('.search-list-bg').append(searchCompany);
+						} else {
+							for(var i = 0; i < data.body.list.length; i++) {
+								var companyId = data.body.list[i].id;
+								var searchCompany = '<div class="search-ent-row fix"><div class="search-ent-left"><div class="search-ent-left-img"><div class="search-ent-left-img-container"><img src="img/default.png" alt=""></div></div><div class="search-ent-left-content"><a target="_blank" class="search-result-company-name" href="company.html?companyId=' + companyId +
+									'">' + data.body.list[i].titleName +
+									'</a><div class="search-result-company-info"><span>法定代表人：' + judgeIsContent(data.body.list[i].legalPerson) + '</span><span>成立 - - - 年</span><span>注册资本： ' + judgeIsContent(data.body.list[i].registeredCapital) +
+									'万人民币</span></div><div class="search-result-company-history"><span class="search-result-company-address">公司地址：' + judgeIsContent(data.body.list[i].address) +
+									'</span></div><div class="search-result-function inden' + i + '"></div></div></div><div class="search-ent-right"><ul><li class="search-ent-right-lists"><div class="company-state-type">' + judgeIsContent(data.body.list[i].operatingState) +
+									'</div></li><li class="search-ent-right-lists"><div class="is-follow commenimg' + i +
+									'"></div></li></ul></div></div>';
+								//评论,浏览，收藏函数回调
+								follNum(companyId, i);
+								$('.search-list-bg').append(searchCompany);
+							}
+						}
+					}
+					companyPage();
+					var url = 'https://120.27.236.240:8443/interface/enterprise/enterpriseinfo/searchInfoList?keyword=' + keyWord + '&queryType=1&sortType=0&pageNum=';
+					page(data.body.allPage, url, companyPage);
+
+				});
+
+				//});
+
+			});
+			//评论,浏览数量
+			function follNum(companyId, i) {
+				(function(num) {
+					$.post('https://120.27.236.240:8443/interface/options/Manager/getThreeCounts?enterpriseId=' + companyId).done(function(follow) {
+						var followNum = '<span class="comment">评论 ( ' + follow.body.commentCount + ' )</span><span class="browse">浏览 ( ' + follow.body.browseCount + ' )</span>';
+						$('.inden' + num).children().remove();
+						$('.inden' + num).append(followNum);
+					});
+					$.post('https://120.27.236.240:8443/interface/options/Follow/getStatus?userID=1&enterpriseId=' + companyId).done(function(see) {
+						if(see.body.noticeStatus == '0') {
+							var commenImg = '<div class="alert-module-center"><ul><li>竞争对手</li><li>商户</li><li>供应商</li><li>经销商</li></ul></div><img src="img/zhuanzhu-off.png"/>';
+
+						} else if(see.body.noticeStatus == '1') {
+							var commenImg = '<img src="img/zhuanzhu-on.png"/>';
+						}
+						//						debugger;
+						look(see, companyId, i);
+						$('.commenimg' + i).children().remove();
+						$('.commenimg' + i).append(commenImg);
+
+					});
+				})(i);
+			};
+
+			//添加关注，取消关注
+			var lookIndex;
+
+			function look(see, companyId, i) {
+				$('.commenimg' + i).click(function() {
+					if(see.body.noticeStatus == 0) {
+						//						$(this).find(".alert-module-center").show();
+						//						$(this).find(".alert-module-center li").click(function() {
+						//							alert($(this).index());
+						//					lookIndex = $(this).index();
+						////					$(this).parent().parent().parent().find('img').attr('src', 'img/has_follow.png');
+						//					console.log($(this).parent().parent().next());
+						//					$(this).parent().parent().hide();
+						//				});		
+						//						clickLi ();
+						var collectUrl = 'http://intf.51hb.co:11000/interface/options/Follow/add';
+						//						debugger;
+						$(this).children().attr('src', 'img/zhuanzhu-on.png');
+						see.body.noticeStatus = '1';
+					} else if(see.body.noticeStatus == 1) {
+						var collectUrl = 'http://intf.51hb.co:11000/interface/options/Follow/delete';
+						$(this).find("img").attr('src', 'img/zhuanzhu-off.png');
+						see.body.noticeStatus = '0';
+					}
+					$.ajax({
+						url: collectUrl,
+						data: {
+							enterpriseId: companyId,
+							type: 1,
+							userID: 1
+						},
+						type: 'POST',
+						dataType: 'json',
+						success: function(data) {}
+					});
+
+				});
+
+			}
+			//判断关注类型
+			//			$('.is-follow').click(function() {
+			//				$(this).find(".alert-module-center").show();
+			//				$('.alert-module-center').show();
+			//
+			//			});
+			//			function clickLi () {
+			//				$('.alert-module-center ul li').click(function() {
+			//				alert($(this).index());
+			//				lookIndex = $(this).index();
+			//				$(this).parent().parent().next().attr('src', 'img/has_follow.png');
+			//				$('.alert-module-center').hide(); 
+			////              $(this).parent().parent().hide();
+			//				
+			//			});
+			//			}
+		});
+	</script>
+	<script src="js/w-js/cookie.js"></script>
+	<script src="js/w-js/getCookie.js"></script>
+
+</html>

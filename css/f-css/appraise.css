@@ -1,0 +1,48 @@
+.content_right{
+	padding: 0;
+}
+.content_right>p{
+	color: gray;
+	font-size: 16px;
+	padding-bottom: 5px;
+	border-bottom:1px solid gainsboro;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+/*评价企业内容*/
+.appraise_text>table {
+margin-top: 20px;
+width: 883px;
+height: 64px;
+/*border: 1px solid red;*/
+
+}
+
+.appraise_text>table td img{
+	width: 64px;
+	height: 64px;
+	margin-left: 20px;
+}
+.appraise_text>table td:nth-child(1){
+	/*border: 1px solid black;*/
+	padding-right: 20px;
+	width: 64px;
+}
+.appraise_text>table td:nth-child(2){
+	width: 250px;
+}
+.appraise_text>table td:nth-child(3){
+	width: 200px;
+}
+.appraise_text>table td .marl{
+	margin-left: 40px;
+}
+.appraise_text>table td a{
+	color: black;
+	border: 1px solid black;
+	padding: 2px 10px;
+	margin-left: 20px;
+}
+.appraise_text>table td a:nth-child(1){
+	margin-left: 50px;
+}

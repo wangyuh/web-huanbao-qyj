@@ -1,0 +1,424 @@
+
+/************公共样式**************/
+
+@charset "utf-8";
+*{padding: 0;margin: 0;}
+a{text-decoration: none;}
+a:hover,a:focus{text-decoration: none!important;outline: none;}
+ul li{list-style: none;}
+img{vertical-align: middle;}
+.fix{*zoom:1; } .fix:after,.fix:before{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden; }
+.wp{width: 1200px;margin: 0 auto!important;}
+.l{float: left;}
+.r{float: right;}
+body{
+	font-family: "微软雅黑";
+}
+
+
+/************搜索结果-条件筛选页-企业模块**************/
+
+.enterprise{
+	width: 918px;
+	margin: 0 auto;
+}
+.search-condition-module{
+	background-color: #FFFFFF;
+	border: 1px solid #EBEBEB;
+	border-top: none;
+}
+
+// 搜索范围
+
+.enter-scope{
+	width: 100%;
+}
+
+.search-container,.search-containe-static{
+	margin-left: 30px;
+	margin-right: 30px;
+	border-bottom: 1px solid #ebebeb;
+}
+.search-containe-static1{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.search-container{
+	height: 69px;
+	overflow: hidden;
+}
+
+.search-title{
+	height: 69px;
+	line-height: 69px;
+	font-size: 14px;
+	float: left;
+	color: #333333;
+	font-weight: 700;
+}
+
+.search-content{
+	float: left;
+	margin-left: 35px;
+	width: 650px;
+}
+
+.fwsearch{
+	padding: 5px 14px;
+	font-size: 14px;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 21px;
+	margin-left: 15px;
+}
+.fwsearch>a{
+     color: #666666;
+}
+.search-content-list-ul{
+	float: right;
+	width: 560px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.search-content-list-ul li{
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 21px;
+	padding: 0 4px;
+	margin-right: 13px;
+}
+
+.search-content-list-ul li a {
+    color: #666;
+    margin: 0 10px 0 5px;
+    display: block;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+}
+
+.search-content-list-on{
+	background: #29c9a0;
+	color: #fff!important;
+	margin-left: 15px;
+}
+.search-content-list-on>a{
+    color: #fff!important;
+}
+.search-content-more{
+	float: right;
+	height: 28px;
+	line-height: 28px;
+	color: #666;
+	font-size: 14px;
+	background: url(../../img/xial.png) no-repeat;
+	background-position: right center;
+	padding-right: 15px;
+	cursor: pointer;
+	margin-top: 21px;
+}
+
+// 高级筛选
+// a{}
+.bt25{
+	margin-bottom:25px;
+}
+ .search-content > .btn-group{
+	margin-top: 25px;
+}
+
+.search-content > .btn-group > a.toggle{
+	margin-right: 45px;
+    color: #666;
+    font-size: 14px;
+    background: url(../../img/xial.png) no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.btn-group{
+	
+}
+
+.dropdown-menu{
+    left: 0;
+    top: 40px;
+    width: 102px;
+    box-shadow: 5px 5px rgba(102,102,102,.1);
+    border-radius: 0;
+    margin-top: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.selected {
+    background: #f1f1f1;
+}
+.search-module-slider{
+	color: #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+	width: 60px;
+	height: 20px;
+	background-color:  #29C9A0;
+	position: relative;
+	left: 50%;
+	margin-left: -30px;
+}
+
+
+// 查询到的信息介绍
+//.enterpriseResult{}
+
+.search-performance{
+	width: 930px;
+    font-size: 16px;
+    color: #6666;
+    background: #F2F3F5;
+    text-indent: 45px;
+    position: relative;
+    padding-top: 22px;
+    padding-bottom: 40px;
+}
+.search-number{
+    color: #f34520;
+}
+.search-vip>a{
+	color: #29C9A0;
+}
+
+// 查到的内容
+
+// .deep-search-hide{}
+
+.search_content .deep-search-hide{
+	width: 930px;
+}
+.search_content{
+	background-color: #FFFFFF;
+	width: 930px;
+	min-height: 600px;
+}
+.search-ent-row:first-child {
+    margin-top: 0;
+}
+
+.search-ent-row {
+    margin-top: 1px;
+    transition: box-shadow .2s;
+    -webkit-transition: box-shadow .2s;
+    background: #fff;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-bottom: solid #e9eeef 1px;
+}
+// 选择部分
+.deep-search-hide{}
+.deep-search-hide .deep-search-conditions {
+    border-bottom: solid #EBEBEB 1px;
+    border-left: 1px solid #EBEBEB;
+    width: 928px;
+    height: 46px;
+    background: #fafafa;
+}
+.deep-search-conditions .deep-search-conditions-left {
+    float: left;
+    width: auto;
+    height: 50px;
+}
+.deep-search-company-name,.deep-search-value,.deep-search-company-state,.deep-search-company-follow{
+	color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+     line-height: 50px;
+}
+.deep-search-value-add{
+	margin-left: -40px;
+}
+.deep-search-company-name {
+    padding-left: 43px;
+}
+.deep-search-type-default {
+    margin-left: 86px;
+    background: url(../../img/xial.png) no-repeat;
+    background-position: right center;
+    position: relative;
+    cursor: pointer;
+    color: #b2b2b2;
+    
+}
+.deep-search-value {
+    margin-right: 15px;
+}
+.deep-search-select-types {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    left: -50px;
+    top: 29px;
+    background: #fff;
+    z-index: 10;
+    border: solid #dcdcdc 1px;
+    box-shadow: 5px 5px rgba(102,102,102,.1);
+    display: none;
+    cursor: pointer;
+}
+.deep-search-select-lists {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: solid #dcdcdc 1px;
+}
+
+.deep-search-conditions-right {
+    float: right;
+    height: 50px;
+}
+.deep-search-company-state {
+    margin-right: 90px;
+}
+.deep-search-company-follow{
+	margin-right:45px;
+}
+
+// 内容部分
+
+.search-list-bg {
+    background: #e9eeef;
+    border-bottom: 1px solid #e9eeef;
+    border-left: 1px solid #EBEBEB;
+}
+
+.search-ent-left {
+    float: left;
+    width: 73%;
+    padding-bottom: 16px;
+}
+
+.search-ent-left-img {
+    float: left;
+    width: 23%;
+    padding: 25px 0px 0 40px;
+}
+
+.search-ent-left-img-container {
+    width: 84px;
+    height: 84px;
+}
+
+.search-ent-left-img img {
+    width: 84px;
+    height: 84px;
+}
+
+.search-ent-left-content {
+    float: right;
+    width: 77%;
+}
+
+.search-result-company-name {
+    padding-top: 25px;
+    display: inline-block;
+    color: #618dbe;
+    font-size: 20px;
+}
+.search-result-company-name>b{
+	color: #29C9A0 !important;
+}
+.search-result-company-name>b>b{
+	color: #F34520 !important;
+}
+.search-result-company-info {
+    margin-top: 15px;
+}
+.search-result-company-info span {
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.search-result-company-history {
+    margin-top: 5px;
+    color: #999999;
+    font-size: 14px;
+}
+.search-result-company-history > span {
+    word-break: break-all;
+}
+.search-result-function {
+    margin-top: 18px;
+}
+.search-result-function span {
+    font-size: 14px;
+    color: #b2b2b2;
+}
+.comment {
+    display: inline-block;
+    background: url(../../img/z-img/pinglun.png) no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.browse {
+    display: inline-block;
+    background: url(../../img/z-img/liulan.png) no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+.search-ent-right {
+    float: right;
+    width: 234px;
+}
+
+.search-ent-right-lists {
+    float: left;
+    width: 33%;
+    position: relative;
+}
+
+.company-state-type {
+    color: #29C9A0;
+    font-size: 14px;
+    border: solid #29C9A0 1px;
+    width: 60px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.is-follow {
+    width: 34px;
+    height: 34px;
+    margin-top: 60px;
+    margin-left: 80px;
+    cursor: pointer;
+   
+}
+
+.alert-module-center{
+	width: 160px;
+	height: 120px;
+	position: absolute;
+	top: 60px;
+	left:120px;
+	z-index: 15;
+	background-color: #29C9A0;
+	display: none;
+}
+.alert-module-center>ul>li{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}

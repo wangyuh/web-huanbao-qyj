@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/commonTop.css"/>
+		<link rel="stylesheet" type="text/css" href="css/z-css/commonFooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/f-css/basicInfo.css" />
+		<link rel="stylesheet" type="text/css" href="css/f-css/info.css" />
+	</head>
+
+	<body>
+		<header id="header"></header>
+		<wrap>
+			<!--主体部分-->
+			<div class="content">
+				<!--主体左边的个人信息标签-->
+				<div class="content_left">
+					<!--左边的上面个人信息的头像-->
+					<div class="content_left_top">
+						<div class="img">
+
+						</div>
+						<span>跷课叔叔</span>
+						<p>
+							<span>
+							    <img src="img/vip.png"/>
+						    </span>立刻成为VIP</p>
+					</div>
+					<div class="content_left_content">
+						<ul>
+							<li>
+								<a href="info.html" class="left-nav">个人信息</a>
+							</li>
+							<li>
+								<a href="member.html">会员中心</a>
+							</li>
+							<li>
+								<a href="order.html">我的订单</a>
+							</li>
+							<li>
+								<a href="account.html">帐号设置</a>
+							</li>
+							<li>
+								<a href="myCompanys.html">关注企业</a>
+							</li>
+							<li>
+								<a href="collection.html">我的收藏</a>
+							</li>
+							<li>
+								<a href="demands.html">企业需求</a>
+							</li>
+							<li>
+								<a href="evaluate.html">我的评价</a>
+							</li>
+							<li>
+								<a href="news1.html">消息盒子</a>
+							</li>
+							<li>
+								<a href="monitor.html">监控中心</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!--右侧标签内容-->
+				<div class="content_right">
+					<div class="c-r-top">
+						<div class="c-r-top-left">
+							<p>个人信息</p>
+							<p>PERSONAL</p>
+						</div>
+						<button onclick="changeName()" id="saveChange">保存修改</button>
+					</div>
+					<div class="content_right_text">
+						<div class="con-right-text-ul">
+							<ul>
+								<li>基本信息</li>
+								<li><div>头像</div><label  id="w-head-prcture" title="点我换头像">
+									<form id="uploadForm" enctype="multipart/form-data">
+										<input type="file" name="file" id="fileId"  accept="image" multiple=""></label>
+									</form>
+								</li>
+								<li>昵称 <input type="text" name="" id="w-name" value="" /></li>
+								<li>帐号 <span id="w-userName"></span></li>
+								<!--<li>邮箱 <input type="text" name="" id="" value="" /></li>-->
+								<!--公司信息-->
+								<!--<li>公司信息</li>
+								<li>公司名称 <input type="text" name="" id="" value="" /></li>
+								<li>职位 <input type="text" name="" id="" value="" /></li>
+								<li>行业
+									<span>
+										 <input type="checkbox" id="myCheck" class="cleck1">
+										 <label for="myCheck"></label>经融
+										 <input type="checkbox" id="myCheck1" class="cleck1">
+										 <label for="myCheck1"></label>投资
+										 <input type="checkbox" id="myCheck2" class="cleck1">
+										 <label for="myCheck2"></label>法律
+										 <input type="checkbox" id="myCheck3" class="cleck1">
+										 <label for="myCheck3"></label>互联网
+										<br />
+										 <input type="checkbox" id="myCheck4" class="cleck1">
+										 <label for="myCheck4"></label>采购
+										 <input type="checkbox" id="myCheck5" class="cleck1">
+										 <label for="myCheck5"></label>销售
+										 <input type="checkbox" id="myCheck6" class="cleck1">
+										 <label for="myCheck6"></label>其他
+									</span>
+
+								</li>-->
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="common-footer">
+			</div>
+		</wrap>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/f-js/info.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/w-js/cookie.js"></script>
+	<script src="js/w-js/genren_center.js"></script>
+	<script src="js/w-js/getCookie.js"></script>
+	<script>
+		getInfo();
+	</script>
+</html>

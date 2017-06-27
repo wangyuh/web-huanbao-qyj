@@ -1,0 +1,107 @@
+body{
+	background-color: #f2f3f5;
+}
+wrap{
+	width: 100%;
+	
+   
+}
+/*加入我们的上面黑色部分*/
+.top_content{
+	width: 100%;
+	height: 160px;
+	background-image: url(../../img/black-bj.png);
+	margin-top: 110px;
+}
+.top_content_text{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.top_content_text p{
+	margin: 0;
+	padding: 0;
+}
+.top_content_text p:first-child{
+	font-size: 20px;
+	color: white;	
+}
+.top_content_text p:nth-child(2){
+	font-size: 16px;
+	color: #bfbfbf;
+	font-weight:100;
+	
+}
+.top_content_text p:nth-child(3){
+	margin-top: 5px;
+	font-size: 18px;
+	color: white;
+ 	text-align: right;
+ 	margin-bottom: 10px;
+	
+}
+.top_content_text p:last-child{
+	color: #BFBFBF;
+	text-align: right;
+}
+/*加入我们的主体内容部分*/
+.content_text{
+	width: 1200px;
+	margin: 0 auto;	
+	
+}
+.context-text-text{
+	overflow: hidden;
+	height: 200px;
+	background-color: white;
+	padding: 30px 20px;
+	margin-top: 22px;
+	border: 1px solid #EBEBEB;
+	
+	
+}
+/*加入我们的每条左边部分*/
+.content-text-text-left{
+	float: left;
+	width: 499px;
+	padding: 20px;
+	border-right:2px dotted #EBEBEB;
+	height: 135px;
+	overflow: hidden;
+	padding-top: 40px;
+}
+.content-text-text-left .join-img{
+	width: 50px;
+	height: 50px;
+	background-image: url(../../img/qianduan.png);
+	float: left;
+	margin-right: 40px;
+}
+.context-text-text:nth-child(2) .content-text-text-left .join-img{
+	background-image: url(../../img/designer.png);
+}
+.context-text-text:nth-child(3) .content-text-text-left .join-img{
+	background-image: url(../../img/chanpin.png);
+}
+.content-text-text-left ul{
+	float: left;
+}
+.content-text-text-left ul li:first-child{
+	font-size: 20px;
+}
+.content-text-text-left ul li:last-child{
+	color: #BFBFBF;
+}
+/*加入我们每条的右边部分*/
+.content-text-text-right{
+	float: left;
+	height: 135px;
+	padding-top: 10px;
+	
+}
+.content-text-text-right ul li{
+	font-size: 16px;
+	margin-bottom:10px;
+	padding-left: 40px;
+	
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>软件著作权</title>
+	</head>
+	<body>
+		<!--<div class="select_result">-->
+			<!--著作权-->
+			<!--<div class="copyright">-->
+				<!--著作权左边内容-->
+				<!--<div class="trademark_left">
+					<div class="trademark_left_text">
+						<p>Zigbee 技术技术论文著作权<span>V 1.04</span></p>
+						<p>软件简称：<span>作品著作权证书 </span>软件著作权人：<span><a href="company.html">南京物联传感科技有限公司</a></span></p>
+						<p>登记号 ：<span>国作登字  2016-03-16</span>分类号：<span>2016-03-16</span></p>
+						<p>登记批准日期：<span>2016-03-16</span></p>
+					</div>
+					
+				</div>-->
+				<!--著作权中间内容-->
+				<!--<div class="trademark_content">
+					<span style="width: 90px;">软件著作权</span>
+				</div>
+			</div>
+		</div>-->
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function  () {
+			var keySearch = sessionStorage.getItem('searchContent');
+	if (keySearch == '') {
+			var keyWord = $('.search-result-nav input').val('小米');
+			} else{
+			var keyWord = $('.search-result-nav input').val(keySearch);
+			}
+			$.post('https://120.27.236.240:8443/interface/qualifications/Softwarecopyright/getListByEnterpriseID?enterpriseId=95756072&pageSize=10&pageNum=1').done(function  (soft) {
+//				console.log(soft);
+				var searchNum =soft.body.total;
+				$('.search-number').html(searchNum);
+				$('.search-company').html($('.search-result-nav input').val());
+				function judgeIsContent (name) {
+					if (name == 'null') {
+					    return '- -';
+				} else{
+					 return  name;
+				}
+					}
+					if (soft.body.list.length == 0) {
+					var bidList = '<div class="no-message">暂无相关信息</div>';
+					 $('.search-list-bg').append(bidList);
+				} else{
+						for (var i =0;i<soft.body.list.length;i++) {
+						var softList = '<div class="select_result"><div class="copyright"><div class="trademark_left"><div class="trademark_left_text"><p>'+
+						judgeIsContent(soft.body.list[i].fullName) +'<span>'+ judgeIsContent(soft.body.list[i].version) + '</span></p><p>软件简称：<span>' + 
+						judgeIsContent(soft.body.list[i].shortName)  +'</span>软件著作权人：<span><a href="company.html?companyId='+ judgeIsContent(soft.body.list[i].enterpriseID) +'">'+
+						judgeIsContent(soft.body.list[i].enterpriseName)+'</a></span></p><p>登记号 ：<span>'+ judgeIsContent(soft.body.list[i].registrationNo)
+						+ '</span>分类号：<span>' + judgeIsContent(soft.body.list[i].classificationNo) + '</span></p><p>登记批准日期：<span>'+
+						judgeIsContent(soft.body.list[i].registrationDate) +'</span></p></div></div><div class="trademark_content"><span style="width: 90px;">软件著作权</span></div></div></div>';
+				  $('.search-list-bg').append(softList);
+				}	
+				}
+				
+			});
+		});
+	</script>
+</html>

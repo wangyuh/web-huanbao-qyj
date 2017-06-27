@@ -1,0 +1,254 @@
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.detail-konwledge-module{
+	/*border: 1px solid red;*/
+	width: 880px;
+	padding: 15px 20px;	
+}
+.detail-konwledge-brand{
+	width: 840px;
+}
+.detail-konwledge-brand-nav{
+	overflow: hidden;
+}
+.detail-konwledge-brand-left{
+	float: left;
+	font-size: 16px;
+	font-weight: 700;
+}
+.dropdown-toggle,.dropdown-toggle:hover{
+	color: #333333;
+}
+.dropdown-toggle>span:nth-of-type(2){
+	color: #29C9A0;
+}
+.pull-right{
+	font-size: 14px;
+	font-weight: 700;
+	color: #333333;
+}
+.ability-filter-dropdown{
+	padding-left: 40px;
+}
+.detail-konwledge-brand-content{
+	overflow: hidden;
+}
+.detail-konwledge-brand-content1,.detail-konwledge-brand-content2{
+	width: 408px;
+	height: 126px;
+	border: 1px solid #e1ebe8;
+	background-color: #F5faf9;
+	margin-top: 20px;	
+	position: relative;
+}
+.detail-konwledge-brand-content3{
+	width: 840px;
+	padding-bottom: 20px;
+	border: 1px solid #e1ebe8;
+	background-color: #F5faf9;
+	margin-top: 20px;
+}
+.detail-konwledge-brand1{
+	float: left;
+}
+.detail-konwledge-brand2{
+	float: right;
+}
+
+.trademark_left_logo{
+	width: 124px;
+	height: 84px;
+	padding:0 20px;
+	margin-top: 20px;
+	border-right: 2px dotted #EBEBEB;
+	display: block;
+}
+.trademark_left_logo>img{
+	width: 84px;
+	height: 84px;
+}
+.trademark_left_text{
+	width: 260px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.trademark_left_text>p:first-of-type{
+	font-size: 20px;
+	margin-top: 20px;
+	padding-bottom: 5px;
+	color: #333333;
+}
+.trademark_left_text1{
+	position: relative;
+}
+.trademark_left_text1 p:first-child{
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    letter-spacing: 2px;
+}
+.trademark_left_text>p,.trademark_left_text1>p{
+	color: #999999;
+}
+.trademark_left_text>p>span,.trademark_left_text1>p>span{
+	color: #666666;
+}
+.trademark_left_text3>p:nth-of-type(1){
+	font-weight: 700;
+}
+.trademark_left_text3>p:nth-of-type(3)>span{
+	line-height:23px;
+	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 2;
+ 	-webkit-box-orient: vertical;
+}
+.trademark_left_text1 a{
+	color: #29C9A0;
+	position: absolute;
+	right: 0;
+}
+.trademark_left_text1 a>span{
+	padding-left: 10px;
+}
+.z-page-break{
+	border: 1px solid #EBEBEB;
+	margin-top: 20px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+/*专利模块*/
+.detail-patent-nav{
+	margin-top: 30px;
+}
+.trademark_left_text1{
+	margin: 20px;
+	display: inline-block;
+}
+.trademark_left_text1>p:first-of-type{
+	font-size: 20px;
+	color: #29C9A0;
+}
+.trademark_left_text1>p>span:first-child{
+	margin-right: 40px;
+}
+.trademark_left_text1 p:last-child{
+	margin-top: -5px;
+}
+.trademark_left_text1 p:nth-child(2){
+	margin-top: -5px;
+}
+/*著作权*/
+.detail-patent-table,.detail-software-patent-table,.detail-domain-name-table,.detail-qualification-certificate-table,
+.website-message-table,.contributive-message-table{
+	margin-bottom: 0;
+	text-align: center;
+	margin-top: 20px;
+}
+.detail-patent-table th,.detail-software-patent-table th,.detail-domain-name-table th,.detail-qualification-certificate-table th,
+.website-message-table th,.contributive-message-table th{
+	text-align: center;
+	font-weight: normal;
+	color: #999999;
+	background-color: #f2f3f5;
+}
+.detail-patent-table td:nth-of-type(2),.detail-patent-table td:nth-of-type(4),.detail-software-patent-table td:nth-of-type(2),
+.detail-domain-name-table td:nth-of-type(2),.detail-domain-name-table td:nth-of-type(3),.detail-domain-name-table td:nth-of-type(4),
+.detail-qualification-certificate-table td:nth-of-type(2),.detail-qualification-certificate-table td:nth-of-type(3),.detail-qualification-certificate-table td:nth-of-type(5),
+.contributive-message-table td:nth-of-type(1),.contributive-message-table td:nth-of-type(2),.contributive-message-table td:nth-of-type(5),
+.bring-message td:nth-of-type(3),.bring-message td:nth-of-type(5){
+	text-align: left;	
+}
+.detail-domain-name-table td:nth-of-type(2),.website-message-table td:nth-of-type(2){
+	color: #29c9a0;
+}
+.detail-bids td:nth-of-type(2){
+	color: #29c9a0;
+	cursor: pointer;
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    letter-spacing: 2px;
+	/*line-height: 25px;*/
+}
+/*企业年报*/
+.main-message-table,.company-property-table{
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+.main-message-table th{
+	font-weight: normal;
+}
+.main-message-table th:nth-of-type(1),.main-message-table th:nth-of-type(3),
+.main-message-table td:nth-of-type(1),.main-message-table td:nth-of-type(3),
+.company-property-table th:nth-of-type(1),.company-property-table th:nth-of-type(3),
+.company-property-table td:nth-of-type(1),.company-property-table td:nth-of-type(3){
+	color: #999999;
+	background-color: #f2f3f5;
+}
+.main-message-table th:nth-of-type(2),.main-message-table th:nth-of-type(4),
+.main-message-table td:nth-of-type(2),.main-message-table td:nth-of-type(4),
+.company-property-table th:nth-of-type(2),.company-property-table th:nth-of-type(4),
+.company-property-table td:nth-of-type(2),.company-property-table td:nth-of-type(4){
+	color: #666666;
+}
+
+/*搜索详情经营信息*/
+.detail-manage-bottom{
+	width: 880px;
+	height: 180px;
+	margin-top: 20px;
+	background-color: #ee6052;
+	color: #FFFFFF;
+	text-align: center;
+}
+.detail-manage-bottom>p{
+	font-size: 16px;
+	position: relative;
+	top: 30px;
+}
+.detail-manage-bottom>p>span{
+	font-size: 24px;
+	font-weight: 700;
+	padding: 0 3px;
+}
+.detail-manage-bottom a{
+	position: relative;
+	top: 40px;
+	color: #EE6052;
+	background-color: #FFFFFF;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	display: inline-block;
+	border-radius: 20px;
+}
+.newsText{
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    letter-spacing: 2px;
+}

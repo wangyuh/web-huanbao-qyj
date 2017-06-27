@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>认领企业</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/z-css/homePage.css"/>
+		<link rel="stylesheet" href="css/commonTop.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/z-css/commonFooter.css"/>-->
+		<link rel="stylesheet" href="css/w-css/about_us.css" />
+	</head>
+	<body>
+		<!--header-->
+		<div class="common-top">
+			
+		</div>
+		<!--content-->
+		<section class="w-nav-bg">
+			<div class="w-nav-contant">
+				<p>认领企业</p>
+				<p>CLAIM</p>
+			</div>
+		</section>
+		<section class="w-container">
+			<section class="w-containerClaim">
+				<div class="w-claim-header">
+					郑重提示：依据《公司法》相关规定，未经依法登记而冒用公司或分公司的名义将被处以最高10万元的罚款，并追究相关刑事责任！
+				</div>
+				<div class="w-claim-content">
+					<form action="">
+							<label class="w-claim-inputFile">
+								<input type="file" name="file" style="display: none"/>
+								<p>点击上传营业执照</p>
+							</label>
+							<div class="w-form-list">
+								<label for="">企业全称</label>
+								<input type="text" placeholder="请输入企业名称" required="required"/>
+							</div>
+							<div class="w-form-list">
+								<label for="">公司地址</label>
+								<input type="text" placeholder="请输入企业详细地址" required="required"/>
+							</div>
+							<div class="w-form-list">
+								<label for="">申请人姓名</label>
+								<input type="text" placeholder="请输入身份证上的姓名" required="required"/>
+							</div>
+							<div class="w-form-list">
+								<label for="">联系方式</label>
+								<input type="text" placeholder="请输入公司的联系方式" required="required"/>
+							</div>
+							<div class="w-form-list">
+								<label for="">公司邮箱</label>
+								<input type="text" placeholder="请输入公司的邮箱" required="required"/>
+							</div>
+							<input type="submit" value="提交申请"/ class="w-form-submit">
+					</form>
+				</div>
+				<div class="w-claim-footer">
+					<h3>认领企业的好处</h3>
+					<ul class="w-prcture-area">
+						<li><img src="img/w-img/rocket.png" alt="" /><p>企业信息权威展示</p></li>
+						<li><img src="img/w-img/rocket.png" alt="" /><p>企业官方公告发布</p></li>
+						<li><img src="img/w-img/rocket.png" alt="" /><p>尊享用户评论回应</p></li>
+						<li><img src="img/w-img/rocket.png" alt="" /><p>提升搜索准确度</p></li>
+						<li><img src="img/w-img/rocket.png" alt="" /><p>提升企业评分</p></li>
+						<li><img src="img/w-img/rocket.png" alt="" /><p>免费推广</p></li>
+					</ul>
+				</div>
+			</section>
+			
+		</section>
+		<!--footer-->
+		<div class="common-footer">
+				
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.common-top').load('fixedTop.html');
+			$('.common-footer').load('commonFooter.html');
+		});
+	</script> 
+</html>

@@ -1,0 +1,116 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+.gray{
+	color:#9a9a9a;
+}
+.w-regional-range-container{
+	font-size: 14px;
+	color:#666;
+	height: 68px;
+	margin:0 30px 0 30px;
+	border-bottom: 1px solid #e9eeef;
+	min-width: 800px;
+}
+.w-search-range-title{
+	height: 68px;
+	line-height: 68px;
+}
+.w-search-range-content>a{
+	height: 68px;
+	line-height: 68px;
+	color:#666;
+	position: relative;
+	top: -25px;
+	padding-right: 20px;
+}
+.w-search-range-content>a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.w-citys-container{
+	width:460px ;
+	position: absolute;
+	z-index: 5;
+	border:1px solid #E9EEEF ;
+	top:25px;
+	box-shadow: 5px 5px 5px  #E3E3E3 ; 
+	background: white;
+	overflow: hidden;
+	display: none;
+}
+.w-citys-container li li{
+	display: inline;
+}
+.w-citys-container-top{
+	padding:10px;
+	border-bottom: 1px solid #efefef;
+}
+.w-active{
+	background: #29C9A0;
+	color:white;
+	border-radius:2px;
+}
+.w-active2{
+	background: #fc0;
+	border-radius:2px;
+	padding:3px;
+}
+.w-citys-name{
+	padding: 5px 3px;
+	cursor: pointer;
+}
+.w-citys-item{
+	display: inline-block;
+	width: 60px;
+    margin: 5px 0 5px 12px;
+}
+.w-citys-pinyin{
+	float: left;
+	color:#9a9a9a;
+}
+.w-citys-container-center{
+	border-bottom:1px solid #efefef;
+}
+.w-citys-toggle-container{
+    	display: inline-block;
+    	float: left;
+    	margin: 5px 0 5px 0;
+    	position: relative;
+    	padding: 6px 4px 4px 5px;
+    	background-color: #e8e8e8;
+    	width: 100%;
+}
+.w-citys-container-bottom .w-citys-pinyin,.w-citys-container-bottom .w-citys-name{
+	line-height: 25px;
+}
+.area-all-inner{
+	width: 64px;
+	float: left;
+	margin-left: 10px;
+	margin-bottom:5px;
+	cursor: pointer;
+	line-height: 24px;
+}
+.srlangle-border-up{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border:6px solid;
+	border-color: transparent transparent #e8e8e8 transparent;
+	top:-12px;
+}
+.w-citys-name:hover,.area-all-inner:hover{
+	color:#4a90e2;
+}

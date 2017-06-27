@@ -1,0 +1,74 @@
+/*@charset "utf-8";*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.page{
+	background-color: #dbdbdb;
+}
+.top-nav{
+	height: 2.5rem;
+	background-color: #3497d9;
+	text-align: center;
+}
+.icon-menu{
+	color: #FFFFFF;
+	font-size: 3rem;
+}
+.test-page1,.test-page2{
+	color: #FFFFFF;
+	font-size: 0.7rem;
+	position: relative;
+}
+.test-page1{
+	font-family: "微软雅黑";
+	top: -0.25rem;
+}
+.test-page2{
+	font-family: "仿宋";
+	top: -1rem;
+}
+.publicity-picture{
+	/*测试*/
+	/*border: 1px solid black;*/
+	height: 4.5rem;
+	text-align: center;
+	margin-bottom: 0.25rem;
+	background-color: #FFFFFF;
+}
+.search-content{
+	background-color: #FFFFFF;
+	height: 2.1rem;
+}
+.searchbar .search-input input{
+	height: 1.5rem;
+	width: 14rem;
+	margin: auto;
+}
+.search-position{
+	position: relative;
+	right: 0.5rem;
+}
+.firm{
+	font-size: 0.7rem;
+	font-family: arial;
+	margin-left: 0.2rem;
+}
+.center-ul{
+	background-color: #FFFFFF;
+	height: 4.1rem;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+}
+.center-ul>li{
+	border: 1px solid red;
+	display: inline-block;
+	width: 4.5rem;
+	height: 4.1rem;
+	text-align: center;
+}
+.moni-img{
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1px solid blueviolet;
+}

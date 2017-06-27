@@ -1,0 +1,169 @@
+@charset "utf-8";
+.w-article{
+	width: 920px;
+	margin:0 auto;
+	-webkit-box-shadow: 0px 0px 1px #999;
+	-moz-box-shadow: 0px 0px 1px #999;
+	-ms-box-shadow: 0px 0px 1px #999;
+	-o-box-shadow: 0px 0px 1px #999;
+	box-shadow: 0px 0px 1px #999;
+	background-color: white;
+	min-height: 580px;
+}
+/*我评价的公司*/
+.w-investment-container{
+	padding:1px 35px 1px 25px;
+	background-color: white;	
+}
+.w-heading-tit{
+	font-size: 16px;
+	color:#333;
+	margin:30px 0;
+	font-weight:600;
+}
+.w-heading-tit span{
+	width: 5px;
+	height: 20px;
+	background: red;
+	display: inline-block;
+	margin-right: 10px;
+	float: left;
+}
+.w-conpany-infor-box{
+	background:#f5faf9;
+	padding:20px;
+	border:1px solid #e1ebe8;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.w-conpany-prc{
+	width: 84px;
+	height: 84px;
+	background-size:84px !important;
+}
+.w-infor-right-box{
+	margin-left: 20px;
+	width:350px;
+}
+.w-conpany-name,.w-legal-man{
+	margin-bottom: 10px;
+}
+.w-conpany-name a{
+	font-size: 16px;
+	color: #2ac8ab;
+	font-weight: 500;
+	margin-right: 20px;
+	font-weight: 600;
+}
+.w-name-message a{
+	color: #2ac8ab;
+}
+.w-conpany-name span{
+	display: inline-block;
+	width: 60px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	color:#999;
+	background: #dee6e4;
+	-webkit-border-radius:13px ;
+	-moz-border-radius:13px ;
+	-ms-border-radius:13px ;
+	-o-border-radius:13px ;
+	border-radius:13px ;
+}
+.w-legal-man span{
+	margin-right: 40px;
+}
+.w-industry{
+	color:#999;
+}
+.w-stale-box,.w-gr-stale-box{
+	width: 290px;
+}
+.w-stale-box span{
+	display:inline-block;
+	padding: 4px 10px;
+	color:#29C9A0;
+	border:1px solid #29C9A0;
+	margin-right: 20px;
+}
+.w-stale-box span:first-child{
+	margin-bottom: 20px;
+}
+.w-bad-stale{
+	color:#f34520 !important;
+	border:1px solid #f34520 !important;
+}
+/*我的收藏*/
+.w-date-time{
+	color:#999;
+}
+.w-clear-collect{
+	width: 80px;
+	height: 30px;
+	color:white;
+	line-height: 30px;
+	text-align: center;
+	background: #29c9a0;
+	cursor: pointer;
+}
+.w-state-message{
+	padding:4px 10px;
+	border:1px solid #29c9a0;
+	color:#29c9a0;
+	border-radius: 25px;
+}
+.w-nav-a{
+	width:100%;
+	background:#FAFAFA;
+	height:50px;
+	margin-bottom: 20px;
+	
+}
+.w-nav-a li{
+	width: 120px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	border-bottom: 1px solid #ebebeb;
+}
+.w-nav-a li a{
+	width: 120px !important;
+	color:#787878;
+	font-size: 16px;
+}
+.w-nav-a li:last-child{
+	width: 200px;
+	/*border: 1px solid red;*/
+}
+.w-nav-active{
+	background: white;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 0px !important;
+}
+.w-nav-active a{
+	color:#29c9a0 !important;
+}
+.w-gr-stale-box{
+	margin-top:4%;
+}
+.text-red{
+	color:#f34520;
+}
+.text-gray{
+	color:#999;
+}
+.w-mianyi-message{
+	text-align: center;
+}
+.w-infor-right-box1{
+	width: 510px;
+}
+.w-name-message{
+	margin-bottom: 10px;
+}
+.w-name-message a{
+	margin-right: 15px;
+}

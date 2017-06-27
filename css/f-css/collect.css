@@ -1,0 +1,220 @@
+/*我的收藏选项卡*/
+.content_right>ul{
+	
+}
+.content_right>ul>li{
+	display: inline-block;
+	width: 106px;
+	height: 40px;
+	border: 1px solid gray;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 15px;
+}
+.content_right>ul>li:first-child{
+	background-color: lawngreen;
+	
+}
+/*我的选项卡内容*/
+/*招中标主体内容*/
+.winBidding_text{
+	display: none;
+}
+.winBidding_text>table{
+	width: 794px;
+	height: 83px;
+	margin-top: 20px;
+	border: 1px solid gray;	
+}
+.winBidding_text>table td:first-child{
+	/*border: 1px solid red;*/
+	padding-left: 20px;
+	text-align: left;
+}
+.winBidding_text>table td:nth-child(2){
+	width: 250px;
+}
+.winBidding_text>table td{
+	text-align: left;
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+.winBidding_text>table td a,.winBidding_text>table td button{
+	color: black;
+	background-color: white;
+	padding: 2px 10px;
+}
+.winBidding_text>table td:nth-child(3) a{
+	border: 1px solid red;
+	margin-left: 20px;
+}
+.winBidding_text>table td:nth-child(4) a{
+	border: 1px solid gray;
+	
+}
+.winBidding_text>table td button{
+	border: 1px solid gray;
+}
+/*企业需求*/
+.enterprise_need_text{
+	display: none;
+}
+/*政府法规，政策*/
+.policiesRegulations_text{
+	display: none;
+}
+.policiesRegulations_text table{
+	margin-top: 20px;
+	width: 850px;
+	height: 110px;
+	border: 1px solid gray;
+}
+.policiesRegulations_text>table td:first-child{
+	padding-left: 20px;
+	width: 500px;
+}
+.policiesRegulations_text>table td a,.policiesRegulations_text>table td button{
+	color: black;
+	background-color: white;
+	padding: 2px 10px;
+	border: 1px solid gray;
+}
+.policiesRegulations_text>table td:nth-child(2) a{
+	border: 1px solid red;
+	border-radius: 10px;
+	padding: 5px 15px;
+	font-size: 12px;
+	color: red;
+}
+.policiesRegulations_text>table td:nth-child(1) a{
+	color: blue;
+	border: 0px;
+	padding: 0;
+}
+.policiesRegulations_text>table tr:last-child td{
+	font-size: 12px;
+	color: gray;
+}
+.policiesRegulations_text .p_r_time{
+	margin-right: 117px;
+}
+.policiesRegulations_text .province{
+	margin-left: 35px;
+}
+/*产品*/
+.products{
+	
+}
+.products table {
+	/*border: 1px solid red;*/
+	width: 797px;
+	height: 109px;
+	margin-top: 20px;
+}
+.products table td img{
+	width: 86px;
+	height: 86px;
+}
+
+.products table td:first-child{
+	width: 100px;
+}
+.products table td:nth-child(2){
+	width: 330px;
+}
+.products table td p:first-child{
+	font-weight: 700;
+}
+.products table td a{
+	/*border: 1px solid red;*/
+	color: #2AC8A1;
+	position: relative;
+	top: 15px;
+	left: 13px;
+}
+.products table td span{
+	position: relative;
+	top: -15px;
+}
+.products table td:nth-child(4) a{
+	border: 1px solid #2AC8A1;
+	padding: 3px 10px;
+	top: -50%;
+	margin-left: 20px;
+	
+}
+.products table td:nth-child(4) a:first-child{
+	margin-left: 80px;
+}
+/*专利内容*/
+.patent_text{
+	border: 1px solid #2AC8A1;
+	margin-top: 20px;
+	width: 821px;
+	height: 110px;
+	padding: 10px;
+}
+.patent_text table td:first-child{
+	width: 615px;
+}
+.patent_text table td p:first-child{
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+.patent_text table td p:last-child{
+	margin-top: 10px;
+}
+.patent_text table td p:nth-child(2) span{
+	margin-right:25px;
+}
+.patent_text table td:last-child a:first-child{
+	margin-right: 25px;
+}
+.patent_text table td:last-child a{
+	padding: 3px 10px;
+	border: 1px solid #2AC8A1;
+	color: #2AC8A1;
+	
+}
+/*论文内容*/
+.paper_text{
+	width: 821px;
+	height: 108px;
+	border: 1px solid #2AC8A1;
+	padding: 10px;
+}
+.paper_text table td{
+	border: 1px solid red;
+}
+.paper_text table td a{
+	color: #2AC8A1;
+}
+.paper_text table td:first-child p:first-child{
+	/*margin-bottom: 15px;*/
+	
+}
+.paper_text table td .toll{
+	margin-bottom: 15px;
+	display: inline-block;
+	border: 1px solid red;
+	width: ;
+	
+	
+}
+.paper_text table td:first-child p:nth-child(2){
+	margin-bottom: 10px;
+	color: #2AC8A1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

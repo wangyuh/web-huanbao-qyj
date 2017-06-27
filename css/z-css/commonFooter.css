@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{padding: 0;margin: 0;font-family: "微软雅黑";}
+a{text-decoration: none;color: #333;}
+a:hover,a:focus{text-decoration: none!important;outline: none;}
+ul{margin: 0;}
+ul li{list-style: none;}
+img{vertical-align: middle;}
+.fix{*zoom:1; } .fix:after,.fix:before{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden; }
+.wp{width: 1200px;margin: 0 auto!important;}
+.l{float: left;}
+.r{float: right;}
+
+.z-footer{
+	margin-top: 40px;
+	height: 250px;
+	background-color: #313339;
+}
+.z-footer-about{
+	height: 210px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.z-footer-ul{
+	padding: 40px 0;
+	font-size: 16px;
+}
+.z-footer-ul li{
+	float: left;
+	color: #fff;
+	font-size: 16px;
+}
+.z-footer-ul li>a{
+	font-size: 16px;
+	color: #fff;
+}
+.z-footer-ul li em{
+	padding: 0 15px;
+}
+.z-footer-con p,
+.z-footer-con p a,
+.z-footer-con p span{
+	font-size: 14px;
+	color: rgba(255,255,255,0.7);
+	height: 10px;
+	line-height: 10px;
+}
+.z-footer-con p{
+	margin-bottom: 20px;
+}
+.z-footer-r .z-footer-join{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+	background-color: #29c9a0;
+}
+.z-footer-r .z-footer-join a{
+	color: #fff;
+	font-size: 16px;
+	padding-right: 28px;
+	background: url(../../img/z-img/jiantou.png) no-repeat right center;
+}
+.z-footer-bt p{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: rgba(255,255,255,0.7);
+	font-size: 14px;
+	/*background-color: #29c9a0;*/
+	margin: 0;
+}

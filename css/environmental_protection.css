@@ -1,0 +1,162 @@
+/*环保主体内容*/
+
+.environmental_protection_text_all {
+	width: 925px;
+	margin: 0 auto;
+}
+
+
+/*环保单条内容*/
+
+.environmental_protection_text {
+	width: 925px;
+	height: 140px;
+	border-bottom: 1px solid #EBEBEB;
+	border-left: 1px solid #EBEBEB;
+	padding-left: 45px;
+	padding-top: 20px;
+}
+
+.environmental_protection_text>div {
+	display: inline-block;
+	position: relative;
+}
+
+
+/*单挑左边部分*/
+.env_pro_text_left{
+	width: 500px;
+}
+.env_pro_text_left .d1 {
+	width: 500px;
+	font-size: 20px;
+}
+
+.env_pro_text_left .d1 a{
+	width: 500px;
+	color: #2ac8a1;
+	
+}
+.env_pro_text_left .d1 a>b{
+	width: 600px;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #29C9A0 !important;
+}
+.env_pro_text_left .d1 a>b>b{
+	color: #F34520 !important;
+}
+.env_pro_text_left .d2 {
+	font-size: 14px;
+	color: #666;
+	margin-top: 10px;
+	width: 600px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.env_pro_text_left .d2 span:nth-child(2) {
+	margin-left: 40px;
+}
+
+.env_pro_text_left .d3 {
+	font-size: 14px;
+	color: #B2B2B2;
+	margin-top: 10px;
+}
+
+.env_pro_text_left .d3 a {
+	margin-right: 10px;
+	color: #2ac8a1;
+}
+
+
+/*单条中间部分*/
+
+.env_pro_text_content {
+	left: 175px;
+	top: -30px;
+}
+
+.env_pro_text_content .paper {
+	width: 71px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: red;
+	border: 1px solid red;
+}
+
+.env_pro_text_content p {
+	color: #999999;
+	position: absolute;
+	width: 200px;
+	left: -25px;
+	width: 200px;
+	top: -40px;
+}
+
+.env_pro_text_content span {
+	border: 1px solid #2ac8a1;
+	color: #2ac8a1;
+	display: inline-block;
+	text-align: center;
+	line-height: 26px;
+	width: 60px;
+	height: 26px;
+	border-radius: 13px;
+}
+
+.env_pro_text_content .span1 {
+	position: absolute;
+	top: -10px;
+}
+
+
+/*单挑右边部分*/
+
+.env_pro_text_right {
+	left: 240px;
+	top: -25px;
+}
+.env_pro_text_right1 {
+	left: 230px;
+	top: -25px;
+}
+
+.env_pro_text_right span,.env_pro_text_right1 span {
+	color: orange;
+	display: inline-block;
+	font-size: 30px;
+}
+
+.env_pro_text_right .span2 {
+	margin-left: 62px;
+}
+
+/*招中标.*/
+.attr1{
+	left: 152px;
+}
+.attr1 span{
+	width: 80px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+}
+.attr2{
+	left: 225px;
+	top: -30px;
+}
+.attr2 a{
+	background-color: #2AC8A1;
+	color: white;
+	display: inline-block;
+	width: 83px;
+	height: 31px;
+	text-align: center;
+	line-height: 31px;
+}

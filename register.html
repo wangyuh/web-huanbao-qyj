@@ -1,0 +1,59 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/w-css/register.css"/>
+	</head>
+	<body>
+		<div  class="keshiHeight">
+		<!--登录页面-->
+		<article class="w-active">
+			<section class="w-register-left left">
+				<a href="homePage.html"><button class="w-reture-btn">返回首页</button></a>
+			</section>
+			<section class="w-register-right">
+				<div class="w-register-content">
+					<div class="w-title">登录</div>
+					<form action="" method="post">
+						<div class="w-user">
+							<div class="w-user-icom glyphicon glyphicon-user"></div>
+							<input type="text" name="" id="w-phone-number" value="" / placeholder="账号" maxlength="11" onblur="checkPhone()">
+						</div>
+						<div class="w-error-message">
+							<span id="w-phone-error"></span>
+						</div>
+						<div class="w-user">
+							<div class="w-user-icom glyphicon glyphicon-lock"></div>
+							<input type="password" name="" id="w-password" value="" / placeholder="密码" onblur="checkPassword()">
+							<div class="w-judge-icon"><a href="forgetPass.html" title="忘记密码点我！">?</a></div>
+						</div>
+						<div class="w-error-message">
+							<span id="w-password-error"></span>
+						</div>
+						<div class="w-auth-code-container">
+							<input type="text" class="w-input-code left" / placeholder="请输入验证码" onblur="checkCode()">
+							<div class="w-code-box"><canvas id="canvas" width="160" height="54">浏览器版本过低</canvas></div>
+						</div>
+						<div class="w-error-message">
+							<span id="w-code-error"></span>
+						</div>
+						<div class="w-register-btn w-btn-active" onclick="wRegister()">登录</div>
+						<a href="login.html"><div class="w-register-btn" style="margin-top:20px">注册</div></a>
+					</form>
+					<hr class="w-line"/>
+					<div class="w-other-register">
+						<div class="w-QQ-register left"></div>
+						<div class="w-Wechar-register right"></div>
+						<div class="clear"></div>
+					</div>
+				</div>				
+			</section>
+		</article>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/w-js/register.js"></script>
+	</body>
+</html>

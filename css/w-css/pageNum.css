@@ -1,0 +1,6 @@
+@charset "utf-8";
+.w-pageNum li{
+	display: inline-block;
+	padding: 2px 5px;
+	border:1px solid #eee;
+}

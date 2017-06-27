@@ -1,0 +1,54 @@
+/*企业选项卡*/
+.content_right>ul{
+	margin-bottom: 20px;
+}
+.content_right>ul>li{
+
+	display: inline-block;
+	padding: 0px 8px;
+	height: 28px;
+	text-align: center;
+	/*border: 1px solid gray;*/
+	line-height: 28px;
+	margin-right:20px;
+	background-color: #f7f8fa;
+	color: #618dbe;
+	
+}
+.content_right>ul>li:first-child{
+	color: #e68505;
+}
+/*选项卡供应商内容*/
+.supplier>table {
+margin-top: 20px;
+width: 803px;
+height: 64px;
+
+}
+
+.supplier>table td img{
+	width: 64px;
+	height: 64px;
+}
+.supplier>table td:nth-child(1){
+	/*border: 1px solid black;*/
+	padding-right: 20px;
+	width: 64px;
+}
+.supplier>table td:nth-child(2){
+	width: 300px;
+}
+.supplier>table td:nth-child(3){
+	width: 300px;
+}
+.supplier>table td .marl{
+	margin-left: 40px;
+}
+.supplier>table td a{
+	color: black;
+	border: 1px solid black;
+	padding: 2px 10px;
+}
+.sogo , .competitor , .dealer{
+	display: none;
+}

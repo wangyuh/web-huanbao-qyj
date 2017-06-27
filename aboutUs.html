@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/z-css/homePage.css" />
+		<link rel="stylesheet" href="css/commonTop.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/z-css/commonFooter.css"/>-->
+		<link rel="stylesheet" href="css/w-css/about_us.css" />
+	</head>
+
+	<body>
+		<div class="common-top">
+
+		</div>
+		<section class="w-nav-bg">
+			<div class="w-nav-contant">
+				<p>关于我们</p>
+				<p>ABOUT</p>
+			</div>
+		</section>
+		<section class="w-container">
+			<div class="w-about-product-box" style="margin-top:-30px">
+				<div class="w-product-left left">
+					<div>关于产品</div>
+					<div>About product</div>
+					<img src="img/logo-about.png" alt="" />
+					<div>环保企业家</div>
+				</div>
+				<div class="w-product-right left">
+					<div class="w-huanbao-title">环保企业家介绍</div>
+					<p>启信宝是苏州贝尔塔数据科技有限公司旗下的一款企业征信产品，旨在为用户提供快速查询企业工商信息、法院判决信息、关联企业信息、司法拍卖信息、失信信息、被执行人信息、知识产权信息、公司新闻、招聘信息等服务。</p>
+					<p>通过多模式查询，多选项筛选，让查询结果更准确，查询内容更详细！是泛金融，泛投资，泛法律和泛商务（如销售、采购）相关人士的首选工具过多模式查询，多选项筛选，让查询结果更准确，查询内容更详尽！是泛金融，泛投资，泛法律和泛商务（如销售、采购）相关人士的首选工具。</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="w-about-product-box">
+				<div class="w-conpany-name-box">
+					<div class="w-conpany-left left">
+						<div class="w-conpany-tit">江苏省思柯瑞数据科技有限公司</div>
+					</div>
+					<div class="w-conpany-center left">
+						<ul>
+							<li>公司地址：南京市栖霞区紫东东路1号紫东国际创意园B5栋2层</li>
+							<li>公司电话：025-588-16168</li>
+							<li>公司邮箱：sqr@BigData.com</li>
+							<li>公司网址：www.sqrbigdata.com</li>
+						</ul>
+					</div>
+					<div class="w-conpany-right left">
+						<div class="w-app-code">
+							<div class="w-text-big">APP</div>
+							<div>环保企业家</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="w-about-product-box">
+				<div class="w-map">
+					<div class="w-map-prcture" id="allmap">
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="common-footer">
+
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=MZjU2XZQ9iuZuivcWsVHA5PaY2UsEjOs"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.common-top').load('fixedTop.html');
+			$('.common-footer').load('commonFooter.html');
+		});
+	</script>
+	<script type="text/javascript">
+		// 百度地图API功能
+		var map = new BMap.Map("allmap");
+		var point = new BMap.Point(118.9155, 32.084);
+		map.centerAndZoom(point, 15);
+		var marker = new BMap.Marker(point); // 创建标注
+		map.addOverlay(marker); // 将标注添加到地图中
+		marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+	</script>
+
+</html>

@@ -1,0 +1,89 @@
+body{
+	background-color: #F2F3F5;
+	position: relative;
+}
+wrap{
+	width: 100%;	
+	position: relative;
+	border: 1px solid red;
+}
+.content{
+	overflow: hidden;
+	width: 1200px;
+	margin: 120px auto;
+}
+/*左侧信息选项卡*/
+.content_left{
+	float: left;
+	width: 260px;
+	background-color: white;
+	/*border: 1px solid gainsboro;*/
+}
+.content .content_left_top{
+	height: 160px;
+	background-color: #2AC8A1;
+	padding-top: 40px;
+}
+/*头像*/
+.content_left_top .img{
+	width: 84px;
+	height: 84px;
+	border-radius: 50%;
+	/*border: 1px solid red;*/
+	margin-left: 30px;
+	display: inline-block;
+	background-size:84px !important;
+}
+.content_left_top>span{
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	display: inline-block;
+	position: relative;
+	top: -35px;
+	left: 14px;
+}
+/*成为VIP*/
+.content_left_top>p{
+	background-color: white;
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	border: 1px solid #EBEBEB;
+	text-align: center;
+	line-height: 40px;
+	font-size:16px;
+	color: gold;
+	margin-left: 55px;
+	margin-top: 10px;
+}
+.content_left_content{
+	padding-top: 40px;
+	padding-bottom: 0;
+}
+.content_left_content ul{
+	/*border: 1px solid red !important;*/
+	margin-bottom: 0px;
+}
+.content_left_content li{	
+	text-align: center;
+	font-size: 16px;
+	
+}
+.content_left_content li a{
+	height:56px;
+	display: inline-block;
+	width: 100%;
+	line-height:56px;
+	color:#666666;
+}
+.content_left_content li a:hover{
+	text-decoration: none;
+}
+
+/*右侧选项卡内容部分*/
+.content_right{
+	float:left;
+	width:940px;
+	
+}

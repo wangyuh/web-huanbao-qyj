@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商标</title>
+	</head>
+	
+	<body>
+		<!--<div class="select_result">
+			-->
+			<!--商标-->
+			<!--<div class="trademark">-->
+				<!--商标左边内容-->
+				<!--<div class="trademark_left">-->
+					<!--商标logo-->
+					<!--<div class="trademark_left_logo">
+						<img style="position: relative;top: -40px;" src="img/default.png"/>
+					</div>
+					<div class="trademark_left_text">
+						<p style="color: #333;">京东</p>
+						<p><span>商标注册申请受理通知书发文</span></p>
+						<p><span>类别：商用类 </span><span>注册号：京123455123455</span></p>
+						<p>申请人：<span>北京京东科技有限公司</span></p>
+						<p>申请日期：2016-11-31</p>
+					</div>
+					
+				</div>-->
+				<!--商标中间内容-->
+				<!--<div class="trademark_content">
+					<span>商标</span>
+				</div>-->
+				<!--商标右边内容-->
+				<!--<div class="trademark_right">
+					<a href="###">查看详情</a>
+				</div>-->
+			<!--</div>
+		</div>-->
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function  () {
+//			时间戳
+			  function add0(m) {
+	          return m < 10 ? '0' + m : m
+           }
+
+           function format(timestamp, bol) {
+	            //timestamp是整数，否则要parseInt转换,不会出现少个0的情况
+
+	            var time = new Date(timestamp);
+	            var year = time.getFullYear();
+	            var month = time.getMonth() + 1;
+	            var date = time.getDate();
+	            var hours = time.getHours();
+	            var minutes = time.getMinutes();
+	            var seconds = time.getSeconds();
+	       if(bol) {
+		            return year + '-' + add0(month) + '-' + add0(date) + ' ' + add0(hours) + ':' + add0(minutes) + ':' + add0(seconds);
+
+	        } else {
+		            return year + '-' + add0(month) + '-' + add0(date);
+		            //	+' '+add0(hours)+':'+add0(minutes)+':'+add0(seconds)
+	        }
+
+             }
+			var keySearch = sessionStorage.getItem('searchContent');
+	if (keySearch == '') {
+			var keyWord = $('.search-result-nav input').val('小米');
+			} else{
+			var keyWord = $('.search-result-nav input').val(keySearch);
+			}
+			$.post('https://120.27.236.240:8443/interface/qualifications/Trademark/getListByEnterpriseID?enterpriseId=95756072&pageSize=10&pageNum=1').done(function  (brand) {
+//				console.log(brand);
+				var searchNum = brand.body.pageSize * brand.body.pages;
+				$('.search-number').html(searchNum);
+				$('.search-company').html($('.search-result-nav input').val());
+				function judgeIsContent (name) {
+					if (name == 'null') {
+					    return '- -';
+				} else{
+					 return  name;
+				}
+					}
+					if (brand.body.list.length == 0) {
+					var bidList = '<div class="no-message">暂无相关信息</div>';
+					 $('.search-list-bg').append(bidList);
+				} else{
+						for (var i =0;i<brand.body.list.length;i++) {
+							var appliTime = Number(brand.body.list[i].applicationDate);
+							var applicationTime = format(appliTime,0);
+						var brandList = '<div class="select_result"><div class="trademark"><div class="trademark_left"><div class="trademark_left_logo"><img style="position: relative;top: -40px;" src="img/default.png"/></div><div class="trademark_left_text"><p style="color: #333;">小米</p><p><span>'+
+						                 judgeIsContent(brand.body.list[i].state) + '</span></p><p><span>类别：'+
+						                 judgeIsContent(brand.body.list[i].typeName)  + '</span><span>注册号：'+judgeIsContent(brand.body.list[i].registrationNo)+ '</span></p><p>申请人：<span><a href="company.html?companyId='+
+						                brand.body.list[i].enterpriseID +'">'+judgeIsContent(brand.body.list[i].enterpriseName)+'</a></span></p><p>申请日期：'+ applicationTime
+						                 +'</p></div>	</div><div class="trademark_content"><span>商标</span></div></div></div>';
+				  $('.search-list-bg').append(brandList);
+				}	
+				}
+				
+			});
+		});
+	</script>
+</html>

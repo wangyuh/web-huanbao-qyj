@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>招标预告</title>
+	</head>
+
+	<body>
+		<!--招中标-->
+		<!--<div class="environmental_protection_text_all">
+			<!--招中标-->
+		<!--<div class="environmental_protection_text">-->
+		<!--招中标左边内容-->
+		<!--<div class="env_pro_text_left">    
+					<div class="d1">
+						<a href="###">南京思柯瑞技术有限公司</a>
+					</div>
+					<div class="d2">
+						<span>区域：江苏省南京市</span>
+					</div>
+					<div class="d3">
+						<span>发布日期：2016-11-31</span>
+					</div>
+
+				</div>-->
+		<!--招中标中间内容-->
+		<!--<div class="env_pro_text_content attr1">
+					<span>招标预告</span>
+				</div>-->
+		<!--招中标右边内容-->
+		<!--<div class="env_pro_text_right attr2">
+					<img src="img/guanzhu.png"/>
+				</div>
+			</div>
+		</div>-->
+
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+		
+			var keySearch = sessionStorage.getItem('searchContent');
+			if(keySearch == '') {
+				var keyWord = $('.search-result-nav input').val('小米');
+			} else {
+				var keyWord = $('.search-result-nav input').val(keySearch);
+			}
+			$.post('https://120.27.236.240:8443/interface/tender/TenderBaseinfo/getListByKeyword?keyword=' + keySearch + '&pageNum=1').done(function(data) {
+				function invitation() {
+					var searchNum = data.body.list.length * data.body.allPage;
+					$('.search-number').html(searchNum);
+					$('.search-company').html($('.search-result-nav input').val());
+
+					function judgeIsContent(name) {
+						if(name == 'null') {
+							return '- -';
+						} else {
+							return name;
+						}
+					}
+					if(data.body.list.length == 0) {
+						var bidList = '<div class="no-message">暂无相关信息</div>';
+						$('.search-list-bg').append(bidList);
+					} else {
+						for(var i = 0; i < data.body.list.length; i++) {
+							var bidId = data.body.list[i].id;
+							var bidList = '<div class="environmental_protection_text_all"><div class="environmental_protection_text"><div class="env_pro_text_left"><div class="d1"><a href="###">' + data.body.list[i].titleName +
+								'</a></div><div class="d2"><span>招标对象：' + judgeIsContent(data.body.list[i].tenderPeople) + '</span></div><div class="d3"><span>发布日期：' + judgeIsContent(data.body.list[i].date) +
+								'</span></div></div><div class="env_pro_text_content attr1"><span>招标预告</span></div><div class="env_pro_text_right attr2 bidImg' + i + '"></div></div></div>';
+							follNum(bidId, i);
+							$('.search-list-bg').append(bidList);
+						}
+					}
+				}
+				invitation();
+				var urlinvitation = 'https://120.27.236.240:8443/interface/tender/TenderBaseinfo/getListByKeyword?keyword=' + keySearch + '&pageNum=';
+				//分页的调用
+				page(data.body.allPage, urlinvitation, invitation);
+
+			});
+			$('.search-result-top').on('click', '.search-bid', function() {
+				$('.search-list-bg').children().remove();
+				var keyWord = $('.search-result-nav input').val();
+				var pageNum = 1;
+				$('.search-company').html($('.search-result-nav input').val());
+				sessionStorage.setItem('searchContent', keyWord);
+				var keyWord = sessionStorage.getItem('searchContent');
+				$.post('https://120.27.236.240:8443/interface/tender/TenderBaseinfo/getListByKeyword?keyword=' + keyWord + '&pageNum=' + pageNum).done(function(data) {
+					console.log(data);
+					function pageName () {
+						var searchNum = data.body.list.length * data.body.allPage;
+					$('.search-number').html(searchNum);
+
+					function judgeIsContent(name) {
+						if(name == 'null') {
+							return '- -';
+						} else {
+							return name;
+						}
+					}
+					if(data.body.list.length == 0) {
+						var bidList = '<div class="no-message">暂无相关信息</div>';
+						$('.search-list-bg').append(bidList);
+					} else {
+						var commenImgIndex = 0;
+						for(var i = 0; i < data.body.list.length; i++) {
+							var bidId = data.body.list[i].id;
+							var bidList = '<div class="environmental_protection_text_all"><div class="environmental_protection_text"><div class="env_pro_text_left"><div class="d1"><a href="###">' + data.body.list[i].titleName +
+								'</a></div><div class="d2"><span>招标对象：' + judgeIsContent(data.body.list[i].tenderPeople) + '</span></div><div class="d3"><span>发布日期：' + judgeIsContent(data.body.list[i].date) +
+								'</span></div></div><div class="env_pro_text_content attr1"><span>招标预告</span></div><div class="env_pro_text_right attr2 bidImg' + i + '"></div></div></div>';
+							follNum(bidId, i);
+							$('.search-list-bg').append(bidList);
+						}
+					}
+					}
+					var ulrName = 'https://120.27.236.240:8443/interface/tender/TenderBaseinfo/getListByKeyword?keyword=' + keyWord + '&pageNum=';
+					page(data.body.pageNum,urlName,pageName);
+
+				});
+			});
+
+			function follNum(bidId, i) {
+				(function(num) {
+					$.post('https://120.27.236.240:8443/interface/options/Collect/getStatus?userID=1&tenderId=' + bidId + '&type=1').done(function(like) {
+						if(like.body == false) {
+							var commenImg = '<img src="img/statar.png"/>';
+						} else if(like.body == true) {
+							var commenImg = '<img src="img/statar-jihuo.png"/>';
+						}
+						collect(like, bidId, i);
+						$('.bidImg' + i).children().remove();
+						$('.bidImg' + i).append(commenImg);
+					});
+				})(i);
+			};
+
+			//    点击添加收藏  
+			function collect(like, bidId, i) {
+				$('.bidImg' + i).click(function() {
+					if(like.body == false) {
+						var collectUrl = 'https://120.27.236.240:8443/interface/options/Collect/add';
+						$(this).children().attr('src', 'img/statar-jihuo.png');
+						like.body = true
+					} else if(like.body == true) {
+						var collectUrl = 'https://120.27.236.240:8443/interface/options/Collect/delete';
+						$(this).children().attr('src', 'img/statar.png');
+						like.body = false
+					}
+					$.ajax({
+						url: collectUrl,
+						data: {
+							tenderId: bidId,
+							type: 1,
+							userID: 1
+						},
+						type: 'POST',
+						dataType: 'json',
+						success: function(data) {}
+					});
+
+				});
+			}
+
+		});
+	</script>
+
+</html>
